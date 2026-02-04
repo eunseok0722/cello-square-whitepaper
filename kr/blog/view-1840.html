@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <script>window.CELLO_BASE = '../../';</script>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="/static/assets-new/favicon.ico" />
+    <link rel="shortcut icon" href="../../static/assets-new/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
     <title>드론 기반 물류창고 관리 동향 및 국내외 운영 사례 분석 | 첼로스퀘어</title>
     <meta
@@ -35,7 +36,7 @@
         "@context": "https://schema.org/",
         "@type": "Person",
         "name": "백남진",
-        "image": "/static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg",
+        "image": "../../static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg",
         "jobTitle": "교수",
         "worksFor": {
           "@type": "Organization",
@@ -44,12 +45,12 @@
       }
     </script>
 
-    <link rel="stylesheet" href="/static/css-new/common.css" />
-    <link rel="stylesheet" href="/static/css-new/datepicker.css" />
-    <script src="/static/js-new/libs/jquery-3.4.1.min.js"></script>
-    <script src="/static/js-new/libs/jquery-ui.js"></script>
-    <script src="/static/js-new/libs/jquery.cookie.js"></script>
-    <script src="/static/js-new/dev-common.js"></script>
+    <link rel="stylesheet" href="../../static/css-new/common.css" />
+    <link rel="stylesheet" href="../../static/css-new/datepicker.css" />
+    <script src="../../static/js-new/libs/jquery-3.4.1.min.js"></script>
+    <script src="../../static/js-new/libs/jquery-ui.js"></script>
+    <script src="../../static/js-new/libs/jquery.cookie.js"></script>
+    <script src="../../static/js-new/dev-common.js"></script>
   </head>
 
   <body>
@@ -114,7 +115,7 @@
           // 20220617 update
           function getBannerList() {
             $.ajax({
-              url: "/kr/banner-list-ajax.html",
+              url: "../banner-list-ajax.html",
               type: "GET",
               dataType: "json",
               async: false,
@@ -131,7 +132,7 @@
                       if (list.bannerUrl.startsWith("/")) {
                         resultText +=
                           "  <a href=" +
-                          "/kr" +
+                          (window.CELLO_BASE || "/") + "kr" +
                           list.bannerUrl +
                           "  target=" +
                           list.newLinkTarget +
@@ -180,7 +181,7 @@
           <!-- script : 스크롤(.scroll) , 마우스 오버 모션 -->
           <div class="inner">
             <strong class="logo"
-              ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+              ><a href="../index.do" role="button"><span class="hidden">Cello Square</span></a></strong
             >
             <div class="mo-show m-btn align-right">
               <a type="button" class="icon-btn icon-search"><span class="hidden">검색</span></a>
@@ -199,7 +200,7 @@
               <div class="layer-head mo-show">
                 <div class="inner">
                   <strong class="logo"
-                    ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+                    ><a href="../index.do" role="button"><span class="hidden">Cello Square</span></a></strong
                   >
                   <div class="m-btn">
                     <a type="button" class="icon-btn icon-close"><span class="hidden">창닫기</span></a
@@ -209,42 +210,42 @@
               </div>
               <!--//layer-head-->
               <ul class="nav-list d-flex items-start">
-                <li><a href="/kr/transportation.do" title="국제운송">국제운송</a></li>
-                <li><a href="/kr/warehousing-distribution.do" title="창고 및 내륙운송">창고 및 내륙운송</a></li>
-                <li><a href="/kr/techlogistics.do" title="IT 기술">IT 기술</a></li>
+                <li><a href="../transportation.do" title="국제운송">국제운송</a></li>
+                <li><a href="../warehousing-distribution.do" title="창고 및 내륙운송">창고 및 내륙운송</a></li>
+                <li><a href="../techlogistics.do" title="IT 기술">IT 기술</a></li>
               </ul>
               <ul class="nav-sub-list d-flex items-start">
                 <li>
-                  <a href="/kr/resource.do" title="리소스">리소스</a>
+                  <a href="../resource.do" title="리소스">리소스</a>
                   <ul class="sub-menu-list">
-                    <li><a href="/kr/news/news-list.do">스퀘어 News</a></li>
-                    <li><a href="/kr/marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
-                    <li><a href="/kr/blog/blog-list.do">블로그</a></li>
-                    <li><a href="/kr/report/report-list.do">백서</a></li>
-                    <li><a href="/kr/glossary/glossary-list.do">물류용어사전</a></li>
-                    <li><a href="/kr/webinar/webinar-list.do">웨비나</a></li>
-                    <li><a href="/kr/video/video-list.do">동영상</a></li>
+                    <li><a href="../news/news-list.do">스퀘어 News</a></li>
+                    <li><a href="../marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
+                    <li><a href="./blog-list.do">블로그</a></li>
+                    <li><a href="../report/report-list.do">백서</a></li>
+                    <li><a href="../glossary/glossary-list.do">물류용어사전</a></li>
+                    <li><a href="../webinar/webinar-list.do">웨비나</a></li>
+                    <li><a href="../video/video-list.do">동영상</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/kr/contact.do" title="고객지원">고객지원</a>
+                  <a href="../contact.do" title="고객지원">고객지원</a>
                   <ul class="sub-menu-list">
-                    <li><a href="/kr/contact.do">문의하기</a></li>
-                    <li><a href="/kr/faq/faq-list.do">FAQ</a></li>
-                    <li><a href="/kr/guide/guide-list.do">가이드</a></li>
+                    <li><a href="../contact.do">문의하기</a></li>
+                    <li><a href="../faq/faq-list.do">FAQ</a></li>
+                    <li><a href="../guide/guide-list.do">가이드</a></li>
                   </ul>
                 </li>
                 <li>
-                  <a href="/kr/cello-square/samsung-sds-logistics.do" title="회사소개">회사소개</a>
+                  <a href="../cello-square/samsung-sds-logistics.do" title="회사소개">회사소개</a>
                   <ul class="sub-menu-list">
-                    <li><a href="/kr/cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
-                    <li><a href="/kr/cello-square/introduce.do">첼로스퀘어</a></li>
-                    <li><a href="/kr/company/global-network.do">Global Network</a></li>
-                    <li><a href="/kr/cello-square/brand-introduce.do">브랜드 스토리</a></li>
-                    <li><a href="/kr/cello-square/partnerships.do">파트너십</a></li>
-                    <li><a href="/kr/press/press-list.do">언론보도</a></li>
-                    <li><a href="/kr/event/event-list.do">이벤트</a></li>
-                    <li><a href="/kr/promotion/promotion-list.do">프로모션</a></li>
+                    <li><a href="../cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
+                    <li><a href="../cello-square/introduce.do">첼로스퀘어</a></li>
+                    <li><a href="../company/global-network.do">Global Network</a></li>
+                    <li><a href="../cello-square/brand-introduce.do">브랜드 스토리</a></li>
+                    <li><a href="../cello-square/partnerships.do">파트너십</a></li>
+                    <li><a href="../press/press-list.do">언론보도</a></li>
+                    <li><a href="../event/event-list.do">이벤트</a></li>
+                    <li><a href="../promotion/promotion-list.do">프로모션</a></li>
                   </ul>
                 </li>
               </ul>
@@ -329,7 +330,7 @@
           <div class="layer-head mo-show">
             <div class="inner">
               <strong class="logo"
-                ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+                ><a href="../index.do" role="button"><span class="hidden">Cello Square</span></a></strong
               >
               <div class="m-btn">
                 <a type="button" class="icon-btn icon-close"><span class="hidden">창닫기</span></a
@@ -342,7 +343,7 @@
           <div class="inner">
             <div class="search-box">
               <div class="search-area">
-                <form id="searchContentFrom" name="searchContentFrom" method="get" action="/kr/search-result.do">
+                <form id="searchContentFrom" name="searchContentFrom" method="get" action="../search-result.do">
                   <fieldset>
                     <legend>검색 영역</legend>
                     <input
@@ -413,11 +414,11 @@
         <div class="menu-inner">
           <!-- 240719 수정 -->
           <div class="open-menu">
-            <a class="quote" href="/kr/quote/quote-request.do"><span></span><i>견적조회</i></a>
+            <a class="quote" href="../quote/quote-request.do"><span></span><i>견적조회</i></a>
             <a class="chatbot" href="javascript:void(0)" role="button" id="chatbot-badge"
               ><span></span><i>챗봇문의</i></a
             >
-            <a class="email" href="/kr/contact.do"><span></span><i>이메일상담</i></a>
+            <a class="email" href="../contact.do"><span></span><i>이메일상담</i></a>
             <a
               class="join"
               href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
@@ -441,9 +442,9 @@
         <div class="breadcrumb">
           <div class="inner">
             <ul>
-              <li><a href="/kr/index.do">Home</a></li>
-              <li><a href="/kr/resource.do">리소스</a></li>
-              <li class="current"><a href="/kr/report/report-list.do">백서</a></li>
+              <li><a href="../index.do">Home</a></li>
+              <li><a href="../resource.do">리소스</a></li>
+              <li class="current"><a href="../report/report-list.do">백서</a></li>
             </ul>
           </div>
         </div>
@@ -1134,7 +1135,7 @@
                     <div class="text">
                       <div class="detail-new-img-box">
                         <img
-                          src="/static/assets-new/blog-content-images/4aa84edb-7aab-4cdf-9fa4-35ae13642767.jpg"
+                          src="../../static/assets-new/blog-content-images/4aa84edb-7aab-4cdf-9fa4-35ae13642767.jpg"
                           alt="자동화 설비가 적용된 대형 물류창고 내부 전경으로, 고층 랙에 팔레트가 체계적으로 적재되어 있으며 물류 보관 및 운영 효율화를 위한 현대적인 창고 환경을 보여주는 이미지"
                           style="
                             vertical-align: baseline;
@@ -1198,7 +1199,7 @@
                       <div class="detail-new-img-box img">
                         <span class="im_title">[아마존의 프라임 에어 이미지]</span>
                         <img
-                          src="/static/assets-new/blog-content-images/a1fa1937-e417-464d-9406-2afc9791f83b.png"
+                          src="../../static/assets-new/blog-content-images/a1fa1937-e417-464d-9406-2afc9791f83b.png"
                           alt="배송용 화물을 적재한 드론이 야외 환경에서 비행 중이며, 드론 기반 물류 배송과 스마트 물류 운영 기술을 시각적으로 보여줌"
                           style="
                             vertical-align: baseline;
@@ -1237,7 +1238,7 @@
                       <div class="detail-new-img-box img">
                         <span class="im_title">[드론 물류센터 설계도 이미지]</span>
                         <img
-                          src="/static/assets-new/blog-content-images/4f1e95d9-0b55-4982-95a5-2b4498efd82f.png"
+                          src="../../static/assets-new/blog-content-images/4f1e95d9-0b55-4982-95a5-2b4498efd82f.png"
                           alt="다층 구조의 물류창고 외부를 중심으로 여러 대의 드론이 상&middot;하&middot;수평 방향으로 이동하며 물류를 운송하는 개념도로, 드론 기반 창고 관리 및 입출고 물류 흐름을 단계적으로 표현함"
                           style="
                             vertical-align: baseline;
@@ -1273,7 +1274,7 @@
                       <div class="detail-new-img-box img">
                         <span class="im_title">[드론 기반 Warehouse Management의 세 가지 적용 영역]</span>
                         <img
-                          src="/static/assets-new/blog-content-images/e544e5b9-ed8d-44d2-b590-3eef2f222644.jpg"
+                          src="../../static/assets-new/blog-content-images/e544e5b9-ed8d-44d2-b590-3eef2f222644.jpg"
                           alt="드론을 활용한 물류 활용 사례를 아이콘으로 표현한 구성으로, 재고 관리, 창고 내 물류 이동(Intra-Logistics), 시설 점검 및 감시 기능을 각각 시각화함"
                           style="
                             vertical-align: baseline;
@@ -1293,7 +1294,7 @@
                       <div class="detail-new-img-box img">
                         <span class="im_title">[드론 기반 Warehouse Management의 특성]</span>
                         <img
-                          src="/static/assets-new/blog-content-images/57303b1d-f26e-4efc-b422-d8b1667feb19.png"
+                          src="../../static/assets-new/blog-content-images/57303b1d-f26e-4efc-b422-d8b1667feb19.png"
                           alt="드론 활용에 적합한 물류창고 특성을 정리한 인포그래픽으로, 1만㎡ 이상의 대형 창고, 50미터 이상 길이의 복도, 5미터 이상 높은 랙 구조, 단일 깊이 팔레트 랙 환경 등이 드론 기반 재고 관리 및 점검에 유리한 조건임을 항목별로 설명함"
                           style="
                             vertical-align: baseline;
@@ -1322,7 +1323,7 @@
                           >[스위스 Verity, 유럽 EYESEE, 독일의 inventAIRy XL 사의 드론 이미지]</span
                         >
                         <img
-                          src="/static/assets-new/blog-content-images/99f7d279-2e2c-4f49-8c0f-3b0a52fed343.jpg"
+                          src="../../static/assets-new/blog-content-images/99f7d279-2e2c-4f49-8c0f-3b0a52fed343.jpg"
                           alt="물류창고 내부에서 드론이 선반 사이를 비행하며 재고를 인식&middot;점검하고, 자율주행 장비와 연계해 물류 박스를 운송하는 장면으로 드론 기반 재고 관리와 창고 내 물류 자동화를 보여줌"
                           style="
                             vertical-align: baseline;
@@ -1403,7 +1404,7 @@
                       <div class="detail-new-img-box img">
                         <span class="im_title">[인천 신항 컨테이너 터미널 이미지]</span>
                         <img
-                          src="/static/assets-new/blog-content-images/7a485365-472f-4fa9-88b0-0415a7df3a6f.jpg"
+                          src="../../static/assets-new/blog-content-images/7a485365-472f-4fa9-88b0-0415a7df3a6f.jpg"
                           alt="해 질 무렵 대형 항만 컨테이너 터미널 전경으로, 크레인과 다수의 컨테이너가 정렬된 모습이 글로벌 해상 물류 및 항만 운영 환경을 보여줌"
                           style="
                             vertical-align: baseline;
@@ -1550,11 +1551,11 @@
                         <div class="author-02">
                           <picture
                             ><source
-                              srcset="/static/assets-new/blog-content-images/097ab300-f49a-4f5d-b2e1-0d45eb0fb52d.jpg"
+                              srcset="../../static/assets-new/blog-content-images/097ab300-f49a-4f5d-b2e1-0d45eb0fb52d.jpg"
                               media="(max-width: 767px)"
                             />
                             <img
-                              src="/static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg"
+                              src="../../static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg"
                               alt="바이블"
                               class="author-profile"
                             />
@@ -1587,17 +1588,17 @@
                             </div>
                           </div>
                           <img
-                            src="/static/assets-new/blog-content-images/6d3f2335-747e-470e-b04a-e659e7d89061.png"
+                            src="../../static/assets-new/blog-content-images/6d3f2335-747e-470e-b04a-e659e7d89061.png"
                             alt="Cello Square"
                             class="author-logo"
                           />
                           <picture
                             ><source
-                              srcset="/static/assets-new/blog-content-images/6f227977-48dd-40e7-9d7b-a29d51a5a6f5.png"
+                              srcset="../../static/assets-new/blog-content-images/6f227977-48dd-40e7-9d7b-a29d51a5a6f5.png"
                               media="(max-width: 767px)"
                             />
                             <img
-                              src="/static/assets-new/blog-content-images/2aba681a-cae9-485a-af25-393fca582471.png"
+                              src="../../static/assets-new/blog-content-images/2aba681a-cae9-485a-af25-393fca582471.png"
                               alt="Cello Square"
                               class="author-object"
                             />
@@ -1614,7 +1615,7 @@
               </div>
               <!-- // detail-box -->
               <div class="btn-box line align-center">
-                <a href="/kr/blog/blog-list.do" class="btn btn-sm btn-white-border arr-left" role="button"
+                <a href="./blog-list.do" class="btn btn-sm btn-white-border arr-left" role="button"
                   ><span>목록으로</span></a
                 >
               </div>
@@ -1628,118 +1629,118 @@
               <p class="relative-title">블로그 최신 콘텐츠</p>
               <div class="content-list">
                 <div class="content-box">
-                  <a href="/kr/blog/view-1847.html">
+                  <a href="./view-1847.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_01.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_01.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1847.html">장창훈의 알쏭달쏭 한 특수물류 실무⑦</a>
+                    <a class="title" href="./view-1847.html">장창훈의 알쏭달쏭 한 특수물류 실무⑦</a>
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-28
-                      <a class="btn-text arr-right" href="/kr/blog/view-1847.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1847.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
                 </div>
 
                 <div class="content-box">
-                  <a href="/kr/blog/view-1846.html">
+                  <a href="./view-1846.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_02.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_02.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1846.html">첫 해외구매, 수입신고 금액은 이렇게 계산하세요!</a>
+                    <a class="title" href="./view-1846.html">첫 해외구매, 수입신고 금액은 이렇게 계산하세요!</a>
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-28
-                      <a class="btn-text arr-right" href="/kr/blog/view-1846.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1846.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
                 </div>
 
                 <div class="content-box">
-                  <a href="/kr/blog/view-1842.html">
+                  <a href="./view-1842.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_03.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_03.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1842.html">물류패권 1. 왜 지금, 물류 패권인가?</a>
+                    <a class="title" href="./view-1842.html">물류패권 1. 왜 지금, 물류 패권인가?</a>
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-22
-                      <a class="btn-text arr-right" href="/kr/blog/view-1842.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1842.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
                 </div>
 
                 <div class="content-box">
-                  <a href="/kr/blog/view-1841.html">
+                  <a href="./view-1841.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_04.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_04.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1841.html"
+                    <a class="title" href="./view-1841.html"
                       >구매 원가 상승의 빌런,<br />환율 변동에 슬기롭게 대응하는 방법</a
                     >
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-22
-                      <a class="btn-text arr-right" href="/kr/blog/view-1841.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1841.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
                 </div>
 
                 <div class="content-box">
-                  <a href="/kr/blog/view-1840.html">
+                  <a href="./view-1840.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_05.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_05.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1840.html"
+                    <a class="title" href="./view-1840.html"
                       >드론 기반 물류창고 관리 동향 및<br />국내외 운영 사례 분석</a
                     >
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-19
-                      <a class="btn-text arr-right" href="/kr/blog/view-1840.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1840.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
                 </div>
 
                 <div class="content-box">
-                  <a href="/kr/blog/view-1839.html">
+                  <a href="./view-1839.html">
                     <div class="img">
-                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_06.jpg" alt="썸네일" />
+                      <img src="../../static/assets-new/blog-thumbnails/list-thumbnail_06.jpg" alt="썸네일" />
                     </div>
                     <!-- //img -->
                   </a>
                   <div class="info">
                     <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
-                    <a class="title" href="/kr/blog/view-1839.html">2026년 물류 정책, 이렇게 달라진다</a>
+                    <a class="title" href="./view-1839.html">2026년 물류 정책, 이렇게 달라진다</a>
                     <div class="tag"></div>
                     <div class="date">
                       2026-01-15
-                      <a class="btn-text arr-right" href="/kr/blog/view-1839.html"><span>더 알아보기</span></a>
+                      <a class="btn-text arr-right" href="./view-1839.html"><span>더 알아보기</span></a>
                     </div>
                   </div>
                   <!--//info-->
@@ -1802,41 +1803,41 @@
             <div class="footer-logo pc-show"><span class="hidden">SAMSUNG SDS Cello Square</span></div>
             <div class="footer-menu pc-show">
               <div class="footer-memu-list">
-                <a href="/kr/transportation.do">국제운송</a>
-                <a href="/kr/warehousing-distribution.do">창고 및 내륙운송</a>
-                <a href="/kr/techlogistics.do">IT 기술</a>
+                <a href="../transportation.do">국제운송</a>
+                <a href="../warehousing-distribution.do">창고 및 내륙운송</a>
+                <a href="../techlogistics.do">IT 기술</a>
               </div>
               <div class="footer-memu-list">
-                <a href="/kr/resource.do">리소스</a>
+                <a href="../resource.do">리소스</a>
                 <ul class="sub-menu-list">
-                  <li><a href="/kr/news/news-list.do">스퀘어 News</a></li>
-                  <li><a href="/kr/marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
-                  <li><a href="/kr/blog/blog-list.do">블로그</a></li>
-                  <li><a href="/kr/report/report-list.do">백서</a></li>
-                  <li><a href="/kr/glossary/glossary-list.do">물류용어사전</a></li>
-                  <li><a href="/kr/webinar/webinar-list.do">웨비나</a></li>
-                  <li><a href="/kr/video/video-list.do">동영상</a></li>
+                  <li><a href="../news/news-list.do">스퀘어 News</a></li>
+                  <li><a href="../marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
+                  <li><a href="./blog-list.do">블로그</a></li>
+                  <li><a href="../report/report-list.do">백서</a></li>
+                  <li><a href="../glossary/glossary-list.do">물류용어사전</a></li>
+                  <li><a href="../webinar/webinar-list.do">웨비나</a></li>
+                  <li><a href="../video/video-list.do">동영상</a></li>
                 </ul>
               </div>
               <div class="footer-memu-list">
-                <a href="/kr/contact.do">고객지원</a>
+                <a href="../contact.do">고객지원</a>
                 <ul class="sub-menu-list">
-                  <li><a href="/kr/contact.do">문의하기</a></li>
-                  <li><a href="/kr/faq/faq-list.do">FAQ</a></li>
-                  <li><a href="/kr/guide/guide-list.do">가이드</a></li>
+                  <li><a href="../contact.do">문의하기</a></li>
+                  <li><a href="../faq/faq-list.do">FAQ</a></li>
+                  <li><a href="../guide/guide-list.do">가이드</a></li>
                 </ul>
               </div>
               <div class="footer-memu-list">
-                <a href="/kr/cello-square/samsung-sds-logistics.do">회사소개</a>
+                <a href="../cello-square/samsung-sds-logistics.do">회사소개</a>
                 <ul class="sub-menu-list">
-                  <li><a href="/kr/cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
-                  <li><a href="/kr/cello-square/introduce.do">첼로스퀘어</a></li>
-                  <li><a href="/kr/company/global-network.do">Global Network</a></li>
-                  <li><a href="/kr/cello-square/brand-introduce.do">브랜드 스토리</a></li>
-                  <li><a href="/kr/cello-square/partnerships.do">파트너십</a></li>
-                  <li><a href="/kr/press/press-list.do">언론보도</a></li>
-                  <li><a href="/kr/event/event-list.do">이벤트</a></li>
-                  <li><a href="/kr/promotion/promotion-list.do">프로모션</a></li>
+                  <li><a href="../cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
+                  <li><a href="../cello-square/introduce.do">첼로스퀘어</a></li>
+                  <li><a href="../company/global-network.do">Global Network</a></li>
+                  <li><a href="../cello-square/brand-introduce.do">브랜드 스토리</a></li>
+                  <li><a href="../cello-square/partnerships.do">파트너십</a></li>
+                  <li><a href="../press/press-list.do">언론보도</a></li>
+                  <li><a href="../event/event-list.do">이벤트</a></li>
+                  <li><a href="../promotion/promotion-list.do">프로모션</a></li>
                 </ul>
               </div>
             </div>
@@ -1897,8 +1898,8 @@
               </div>
               <!--//add_info-->
               <div class="policy-list">
-                <a href="/kr/policy/terms-of-use.do" title="이용약관">이용약관</a>
-                <a href="/kr/policy/site-privacy_policy.do" title="개인정보처리방침">개인정보처리방침</a>
+                <a href="../policy/terms-of-use.do" title="이용약관">이용약관</a>
+                <a href="../policy/site-privacy_policy.do" title="개인정보처리방침">개인정보처리방침</a>
                 <a href="#popup_email" title="이메일무단수집거부">이메일무단수집거부</a>
               </div>
               <!--//policy_list-->
@@ -2110,7 +2111,7 @@
                   </div>
                   <div class="btn-box align-center">
                     <a
-                      href="/static/assets-new/blog-content-assets/WPKR46_(i4L_White_Paper)_글로벌 컨테이너 선사의 친환경 이행성과 분석-ESG 보고서를 기반으로_KR.pdf"
+                      href="../../static/assets-new/blog-content-assets/WPKR46_(i4L_White_Paper)_글로벌 컨테이너 선사의 친환경 이행성과 분석-ESG 보고서를 기반으로_KR.pdf"
                       id="btnSend"
                       class="btn btn-sm btn-blue"
                       download=""
@@ -2170,12 +2171,12 @@
             <!-- <div class="popup">
     <div class="popup-con">
       <a href="https://www.cello-square.com/kr/promotion/view-190.do">
-        <img src="/static/assets-new/250402_pc_popup_01_1.jpg" alt="특송" class="pc-img">
-        <img src="/static/assets-new/250402_mo_popup_01_1.jpg" alt="특송" class="mo-img">
+        <img src="../../static/assets-new/250402_pc_popup_01_1.jpg" alt="특송" class="pc-img">
+        <img src="../../static/assets-new/250402_mo_popup_01_1.jpg" alt="특송" class="mo-img">
       </a>
       <a href="https://app.cellosquare.com" target="_blank">
-        <img src="/static/assets-new/250402_pc_popup_02_1.jpg" alt="해상" class="pc-img">
-        <img src="/static/assets-new/250402_mo_popup_02_1.jpg" alt="해상" class="mo-img">
+        <img src="../../static/assets-new/250402_pc_popup_02_1.jpg" alt="해상" class="pc-img">
+        <img src="../../static/assets-new/250402_mo_popup_02_1.jpg" alt="해상" class="mo-img">
       </a>
     </div> -->
             <!-- //-->
@@ -2254,8 +2255,8 @@
             <div class="popup_div">
               <div class="popup-info">
                 <a class="popup-a-link-img1" href="https://www.cello-square.com/kr/promotion/view-205.do"></a>
-                <img src="/static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="pc-img" />
-                <img src="/static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="mo-img" />
+                <img src="../../static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="pc-img" />
+                <img src="../../static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="mo-img" />
                 <button type="button" class="btn-popup-close" onclick="twoAreasPopupClose(0,event)">
                   <span class="hidden">레이어 팝업 닫기</span>
                 </button>
@@ -2270,8 +2271,8 @@
 
               <div class="popup-info">
                 <a class="popup-a-link-img2" href="https://www.cello-square.com/kr/promotion/view-204.do"></a>
-                <img src="/static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="pc-img" />
-                <img src="/static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="mo-img" />
+                <img src="../../static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="pc-img" />
+                <img src="../../static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="mo-img" />
                 <button type="button" class="btn-popup-close" onclick="twoAreasPopupClose(1,event)">
                   <span class="hidden">레이어 팝업 닫기</span>
                 </button>
@@ -2338,16 +2339,16 @@
       </script>
       <!-- //퍼블 : 팝업창 확인하기 위해 기존 script 가져옴 -->
 
-      <link rel="stylesheet" href="/static/css-new/swiper-bundle.min.css" />
-      <script src="/static/js-new/libs/swiper-bundle.min.js"></script>
-      <script src="/static/js-new/libs/jquery-ui.min.js"></script>
-      <script src="/static/js-new/libs/selectbox.js"></script>
-      <script src="/static/js-new/libs/gsap.min.js"></script>
-      <script src="/static/js-new/libs/ScrollTrigger.min.js"></script>
+      <link rel="stylesheet" href="../../static/css-new/swiper-bundle.min.css" />
+      <script src="../../static/js-new/libs/swiper-bundle.min.js"></script>
+      <script src="../../static/js-new/libs/jquery-ui.min.js"></script>
+      <script src="../../static/js-new/libs/selectbox.js"></script>
+      <script src="../../static/js-new/libs/gsap.min.js"></script>
+      <script src="../../static/js-new/libs/ScrollTrigger.min.js"></script>
 
-      <script src="/static/js-new/searchEstimate.js"></script>
-      <script src="/static/js-new/tracking.js"></script>
-      <script src="/static/js-new/ui.js"></script>
+      <script src="../../static/js-new/searchEstimate.js"></script>
+      <script src="../../static/js-new/tracking.js"></script>
+      <script src="../../static/js-new/ui.js"></script>
       <script>
         if (window.cqui && typeof cqui.init === "function") {
           cqui.init();
