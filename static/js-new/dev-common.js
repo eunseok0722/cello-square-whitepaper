@@ -1100,7 +1100,7 @@ function getGlossaryTop5(langCd, elementId){
 function getRecommendKeywordAjax(langCd){
 	$.ajax({
 		type: 'GET',
-		url  : "/" + langCd + "/getRecommendKeywordAjax.html",
+		url  : (window.CELLO_BASE || '/') + langCd + "/getRecommendKeywordAjax.html",
 		error: function(xhr, status, error) {
 			console.log(error);
 		},
