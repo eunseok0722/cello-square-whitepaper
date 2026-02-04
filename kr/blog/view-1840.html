@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/static/assets-new/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <title>드론 기반 물류창고 관리 동향 및 국내외 운영 사례 분석 | 첼로스퀘어</title>
+    <meta
+      name="description"
+      content="딥러닝과 AI 기반 실내 자율비행 드론 기술을 바탕으로 자동화&middot;디지털 전환이 진행 중인 국내외 운영 사례를 분석하고, 물류 창고 혁신 흐름을 확인해보세요."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="드론 기반 물류창고 관리 동향 및 국내외 운영 사례 분석 | 첼로스퀘어" />
+    <meta
+      property="og:description"
+      content="딥러닝과 AI 기반 실내 자율비행 드론 기술을 바탕으로 자동화&middot;디지털 전환이 진행 중인 국내외 운영 사례를 분석하고, 물류 창고 혁신 흐름을 확인해보세요."
+    />
+    <meta property="og:url" content="http://www.cello-square.com/kr/blog/view-1840.html" />
+    <meta property="og:image" content="https://www.cello-square.com/seoImgView.do?metaSeqNo=6986" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="드론 기반 물류창고 관리 동향 및 국내외 운영 사례 분석 | 첼로스퀘어" />
+    <meta
+      name="twitter:description"
+      content="딥러닝과 AI 기반 실내 자율비행 드론 기술을 바탕으로 자동화&middot;디지털 전환이 진행 중인 국내외 운영 사례를 분석하고, 물류 창고 혁신 흐름을 확인해보세요."
+    />
+    <meta name="twitter:url" content="http://www.cello-square.com/kr/blog/view-1840.html" />
+    <meta name="twitter:image" content="https://www.cello-square.com/seoImgView.do?metaSeqNo=6986" />
+    <link rel="canonical" href="https://www.cello-square.com/kr/blog/view-1840.html" />
+    <link rel="alternate" hreflang="ko" href="https://www.cello-square.com/kr/blog/view-1840.html" />
+    <link rel="alternate" hreflang="en" href="https://www.cello-square.com/en/blog/view-1845.do" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "백남진",
+        "image": "/static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg",
+        "jobTitle": "교수",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "덕성여자대학교"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="/static/css-new/common.css" />
+    <link rel="stylesheet" href="/static/css-new/datepicker.css" />
+    <script src="/static/js-new/libs/jquery-3.4.1.min.js"></script>
+    <script src="/static/js-new/libs/jquery-ui.js"></script>
+    <script src="/static/js-new/libs/jquery.cookie.js"></script>
+    <script src="/static/js-new/dev-common.js"></script>
+  </head>
+
+  <body>
+    <div class="skip-nav"><a href="#contents">본문으로 바로가기</a></div>
+    <div class="wrap" id="tmpWrapId">
+      <div class="loading-box">
+        <div class="loading"></div>
+        <script type="text/javascript">
+          function showLoading(fun) {
+            $(".loading-box").show();
+            fun && fun();
+          }
+          function offLoading() {
+            $(".loading-box").hide();
+          }
+        </script>
+      </div>
+      <!-- Header -banner Include -->
+      <div class="header-banner" id="header-banner-a">
+        <div class="inner d-flex items-center">
+          <div class="banner-text">
+            <!-- script : 롤링 텍스트 배너 -->
+            <div class="swiper">
+              <ul class="swiper-wrapper" id="bannerSwiper"></ul>
+            </div>
+          </div>
+          <!-- //banner-text-->
+          <ul class="lnb-list d-flex items-center">
+            <li>
+              <a
+                href="http://app.cellosquare.com/login?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+                target="_blank"
+                title="새창 열림"
+                >로그인</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+                target="_blank"
+                title="새창 열림"
+                ><b>회원가입</b></a
+              >
+            </li>
+          </ul>
+          <!-- //lnb-list-->
+          <div class="lang-list">
+            <a href="#" role="button">한국어</a
+            ><!-- script : 언어선택시 해당 언어명 변경 -->
+            <ul class="lang-sub-list">
+              <li><a href="/en/index.do">English</a></li>
+              <li><a href="https://www.cellosquare.cn">简体中文</a></li>
+              <li><a href="/es/index.do">Español</a></li>
+              <li><a href="/vn/index.do">Tiếng Việt</a></li>
+            </ul>
+          </div>
+          <!-- //lang-list-->
+          <a class="icon-btn icon-search"><span class="hidden">검색</span></a
+          ><!-- script : 클릭시 검색 레이어창 (디자인 미정) -->
+        </div>
+        <script type="text/javascript">
+          // 20220617 update
+          function getBannerList() {
+            $.ajax({
+              url: "/kr/banner-list-ajax.html",
+              type: "GET",
+              dataType: "json",
+              async: false,
+              contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+              success: function (json) {
+                var resultText = "";
+                if ((json.list == null || json.list.length === 0) && mobileCheck) {
+                  var elementsByClassName = document.getElementById("header-banner-a");
+                  elementsByClassName.style.display = "none";
+                } else {
+                  $.each(json.list, function (index, list) {
+                    resultText += ' <li class="swiper-slide">';
+                    if (list.newWindowLinkYn == "N") {
+                      if (list.bannerUrl.startsWith("/")) {
+                        resultText +=
+                          "  <a href=" +
+                          "/kr" +
+                          list.bannerUrl +
+                          "  target=" +
+                          list.newLinkTarget +
+                          ' role="button" onclick="updateSrchCnt(\'' +
+                          list.mvBannerSeqNo +
+                          "', 'MKT_BANNER')\" > ";
+                      } else {
+                        resultText +=
+                          "  <a href=" +
+                          list.bannerUrl +
+                          "  target=" +
+                          list.newLinkTarget +
+                          ' role="button" onclick="updateSrchCnt(\'' +
+                          list.mvBannerSeqNo +
+                          "', 'MKT_BANNER')\" > ";
+                      }
+                    } else {
+                      resultText +=
+                        "  <a href=" +
+                        list.bannerUrl +
+                        "  target=" +
+                        list.newLinkTarget +
+                        ' role="button" onclick="updateSrchCnt(\'' +
+                        list.mvBannerSeqNo +
+                        "', 'MKT_BANNER')\" > ";
+                    }
+                    resultText += list.titleNm + "</a>" + "</li>";
+                  });
+                }
+
+                $("#bannerSwiper").append(resultText);
+              },
+              error: function () {
+                console.log("Error");
+              },
+            });
+          }
+
+          getBannerList();
+        </script>
+        <!-- </html> -->
+      </div>
+      <!-- Header  Include -->
+      <header>
+        <nav class="nav">
+          <!-- script : 스크롤(.scroll) , 마우스 오버 모션 -->
+          <div class="inner">
+            <strong class="logo"
+              ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+            >
+            <div class="mo-show m-btn align-right">
+              <a type="button" class="icon-btn icon-search"><span class="hidden">검색</span></a>
+              <a
+                href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+                target="_blank"
+                type="button"
+                class="icon-btn icon-user"
+                onclick="tracking.sign()"
+                ><span class="hidden">회원가입</span></a
+              >
+              <a type="button" class="icon-btn icon-menu"><span class="hidden">menu</span></a>
+            </div>
+            <div class="menu-area">
+              <!-- script :모바일 메뉴 클릭시 보이는 영역 -->
+              <div class="layer-head mo-show">
+                <div class="inner">
+                  <strong class="logo"
+                    ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+                  >
+                  <div class="m-btn">
+                    <a type="button" class="icon-btn icon-close"><span class="hidden">창닫기</span></a
+                    ><!-- script : 클릭시 창 닫기 -->
+                  </div>
+                </div>
+              </div>
+              <!--//layer-head-->
+              <ul class="nav-list d-flex items-start">
+                <li><a href="/kr/transportation.do" title="국제운송">국제운송</a></li>
+                <li><a href="/kr/warehousing-distribution.do" title="창고 및 내륙운송">창고 및 내륙운송</a></li>
+                <li><a href="/kr/techlogistics.do" title="IT 기술">IT 기술</a></li>
+              </ul>
+              <ul class="nav-sub-list d-flex items-start">
+                <li>
+                  <a href="/kr/resource.do" title="리소스">리소스</a>
+                  <ul class="sub-menu-list">
+                    <li><a href="/kr/news/news-list.do">스퀘어 News</a></li>
+                    <li><a href="/kr/marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
+                    <li><a href="/kr/blog/blog-list.do">블로그</a></li>
+                    <li><a href="/kr/report/report-list.do">백서</a></li>
+                    <li><a href="/kr/glossary/glossary-list.do">물류용어사전</a></li>
+                    <li><a href="/kr/webinar/webinar-list.do">웨비나</a></li>
+                    <li><a href="/kr/video/video-list.do">동영상</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/kr/contact.do" title="고객지원">고객지원</a>
+                  <ul class="sub-menu-list">
+                    <li><a href="/kr/contact.do">문의하기</a></li>
+                    <li><a href="/kr/faq/faq-list.do">FAQ</a></li>
+                    <li><a href="/kr/guide/guide-list.do">가이드</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="/kr/cello-square/samsung-sds-logistics.do" title="회사소개">회사소개</a>
+                  <ul class="sub-menu-list">
+                    <li><a href="/kr/cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
+                    <li><a href="/kr/cello-square/introduce.do">첼로스퀘어</a></li>
+                    <li><a href="/kr/company/global-network.do">Global Network</a></li>
+                    <li><a href="/kr/cello-square/brand-introduce.do">브랜드 스토리</a></li>
+                    <li><a href="/kr/cello-square/partnerships.do">파트너십</a></li>
+                    <li><a href="/kr/press/press-list.do">언론보도</a></li>
+                    <li><a href="/kr/event/event-list.do">이벤트</a></li>
+                    <li><a href="/kr/promotion/promotion-list.do">프로모션</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="mo-lang mo-show">
+                <ul class="lnb-list d-flex items-center">
+                  <li>
+                    <a
+                      href="http://app.cellosquare.com/login?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+                      target="_blank"
+                      title="새창 열림"
+                      >로그인</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+                      target="_blank"
+                      title="새창 열림"
+                      onclick="tracking.sign()"
+                      ><b>회원가입</b></a
+                    >
+                  </li>
+                </ul>
+                <!-- //lnb-list-->
+                <div class="lang-list">
+                  <a href="#" role="button">한국어</a
+                  ><!-- script : 언어선택시 해당 언어명 변경 -->
+                  <ul class="lang-sub-list">
+                    <li><a href="/en/index.do">English</a></li>
+                    <li><a href="https://www.cellosquare.cn">简体中文</a></li>
+                    <li><a href="/es/index.do">Español</a></li>
+                    <li><a href="/vn/index.do">Tiếng Việt</a></li>
+                  </ul>
+                </div>
+                <!-- //lang-list-->
+              </div>
+              <!--//mo-lang-->
+
+              <div class="mo-sns mo-show">
+                <ul class="sns-list d-flex">
+                  <li class="naver">
+                    <a href="https://blog.naver.com/cello-square" target="_blank" title="새창 열림" role="button"
+                      ><span class="hidden">Naver Blog</span></a
+                    >
+                  </li>
+                  <li class="linked-in">
+                    <a
+                      href="https://www.linkedin.com/company/cellosquare-global"
+                      target="_blank"
+                      title="새창 열림"
+                      role="button"
+                      ><span class="hidden">LinkedIn</span></a
+                    >
+                  </li>
+                  <li class="youtube">
+                    <a
+                      href="https://www.youtube.com/playlist?list=PL5CBKg4LPW2e0rZrVIH7rCu9towinfDIl"
+                      target="_blank"
+                      title="새창 열림"
+                      role="button"
+                      ><span class="hidden">Youtube</span></a
+                    >
+                  </li>
+                  <li class="facebook">
+                    <a href="https://www.facebook.com/cellosquare" target="_blank" title="새창 열림" role="button"
+                      ><span class="hidden">Facebook</span></a
+                    >
+                  </li>
+                </ul>
+                <!--//sns_list-->
+              </div>
+              <!-- //mo-sns-->
+            </div>
+            <!-- //menu-area-->
+          </div>
+          <!--//inner -->
+        </nav>
+        <!--//nav -->
+        <div class="micro-menu"></div>
+        <div class="search-layer">
+          <div class="layer-head mo-show">
+            <div class="inner">
+              <strong class="logo"
+                ><a href="/kr/index.do" role="button"><span class="hidden">Cello Square</span></a></strong
+              >
+              <div class="m-btn">
+                <a type="button" class="icon-btn icon-close"><span class="hidden">창닫기</span></a
+                ><!-- script : 클릭시 창 닫기 -->
+              </div>
+            </div>
+          </div>
+          <!--//layer-head-->
+
+          <div class="inner">
+            <div class="search-box">
+              <div class="search-area">
+                <form id="searchContentFrom" name="searchContentFrom" method="get" action="/kr/search-result.do">
+                  <fieldset>
+                    <legend>검색 영역</legend>
+                    <input
+                      type="text"
+                      placeholder="검색어를 입력해주세요."
+                      title="검색어 입력"
+                      name="searchValue"
+                      id="searchHeadValue"
+                      value=""
+                      onclick="javascript:fnCheckHeadContentSearchBar(event, 'contentsearch','kr');"
+                      onkeyup="javascript:fnCheckHeadContentSearchBar(event, 'contentsearch','kr');"
+                      autocomplete="off"
+                    />
+                    <button type="button" role="button" class="btn-delet">
+                      <span class="hidden">검색어 삭제</span>
+                    </button>
+                    <button type="button" role="button" class="btn-search" id="btnContentSearch">
+                      <span class="hidden">검색</span>
+                    </button>
+                    <div class="auto-complete-list" id="head-auto-complete-list">
+                      <ul></ul>
+                    </div>
+                    <!-- //auto-complete-list-->
+                  </fieldset>
+                  <div class="form-con-info" id="search-form-con-info" style="display: none">
+                    <p class="error-text error" id="headerGlossarySearchError">검색어를 30자 내로 입력해 주세요.</p>
+                    <!-- 에러 시 노출 -->
+                  </div>
+                </form>
+              </div>
+              <!-- //search-area -->
+
+              <div class="word-area">
+                <div class="inner" id="contentSearchKeyword"></div>
+              </div>
+              <!--//word-area-->
+            </div>
+            <!-- //search-box -->
+            <button type="button" class="btn-popup-close"><span class="hidden">레이어 팝업 닫기</span></button>
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            getRecommendKeywordAjax("kr");
+          });
+
+          $("#btnContentSearch").click(function () {
+            showLoading(function () {
+              //$("#searchContentFrom").prop("action", "/kr/search-result.do");
+              $("#searchContentFrom").submit();
+            });
+            //offLoading();
+          });
+
+          function recommendKeywordSearch(keyWord) {
+            showLoading(function () {
+              $("#searchHeadValue").val(keyWord);
+              //$("#searchContentFrom").prop("action", "/kr/search-result.do");
+              $("#searchContentFrom").submit();
+            });
+            //offLoading();
+          }
+        </script>
+        <!-- //search-layer-->
+      </header>
+      <!-- Floating menu Include -->
+      <div class="floating-menu">
+        <div class="menu-inner">
+          <!-- 240719 수정 -->
+          <div class="open-menu">
+            <a class="quote" href="/kr/quote/quote-request.do"><span></span><i>견적조회</i></a>
+            <a class="chatbot" href="javascript:void(0)" role="button" id="chatbot-badge"
+              ><span></span><i>챗봇문의</i></a
+            >
+            <a class="email" href="/kr/contact.do"><span></span><i>이메일상담</i></a>
+            <a
+              class="join"
+              href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+              target="_blank"
+              onclick="tracking.sign()"
+              ><span></span><i>회원가입</i></a
+            >
+          </div>
+          <!-- //open-menu-->
+          <!-- //240719 수정 -->
+          <!--<a class="join pc-show" href="#" onclick="tracking.sign()"><span></span>회원가입</a> 240719 삭제-->
+          <a class="float-open mo-show" href="#"><span class="hidden">메뉴</span></a
+          ><!-- 240719 수정 -->
+        </div>
+        <a class="top" href="#top"><span class="hidden">위로가기</span></a>
+      </div>
+      <!-- //Floating menu Include -->
+
+      <main id="contents" class="container">
+        <!-- breadcrumb  Include -->
+        <div class="breadcrumb">
+          <div class="inner">
+            <ul>
+              <li><a href="/kr/index.do">Home</a></li>
+              <li><a href="/kr/resource.do">리소스</a></li>
+              <li class="current"><a href="/kr/report/report-list.do">백서</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- //breadcrumb  Include -->
+        <div class="sns-area">
+          <div class="inner">
+            <ul class="content-sns">
+              <li class="facebook">
+                <a href="javascript:facebookShare('');"><span class="hidden">페이스북</span></a>
+              </li>
+              <li class="linked-in">
+                <a href="javascript:linkedinShare('');"><span class="hidden">링크드인</span></a>
+              </li>
+              <li class="url-copy">
+                <a href="javascript:urlCopy('');"><span class="hidden">URL 복사하기</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--//sns-area-->
+
+        <section class="sub-contents" id="sub-contents">
+          <div class="title-box">
+            <h1 class="con-title2">
+              <em class="category-text">백서 </em>
+              글로벌 컨테이너 선사의 친환경 이행성과 분석: ESG 보고서를 기반으로
+            </h1>
+          </div>
+          <!-- //title-box-->
+          <div class="detail-con">
+            <div class="inner">
+              <p class="date"><em>등록일</em><span>2025-07-21</span></p>
+              <div class="detail-box">
+                <div class="text">
+                  <style>
+                    .detail-box .img.img-top {
+                      margin-bottom: 60px;
+                    }
+                    .text.info {
+                      background-color: #f4f4f4;
+                      border: solid 1px #ddd;
+                      padding: 2.25vw;
+                    }
+                    @media screen and (max-width: 767px) {
+                      .detail-box .img.img-top {
+                        margin-bottom: 40px;
+                      }
+                      .text.info {
+                        padding: 8.25vw;
+                      }
+                    }
+                  </style>
+                  <!-- 어드민 등록 영역 시작 -->
+
+                  <div class="text">
+                    <style>
+                      /* Source Area */
+                      .detail-box .source-area {
+                        height: auto;
+                        padding: 18px 20px 14px;
+                        line-height: 1.8;
+                      } /* Image Styling */
+                      .detail-box .img.img-top {
+                        margin-bottom: 60px;
+                      }
+                      .detail-box img {
+                        vertical-align: baseline;
+                      } /* Info Box */
+                      .text.info {
+                        background-color: #f4f4f4;
+                        border: solid 1px #ddd;
+                        padding: 2.25vw;
+                      } /* Links */ /* 새로 추가된 스타일 */ /* Responsive Adjustments */
+                      @media screen and (max-width: 767px) {
+                        .detail-box .source-area {
+                          padding: 18px 18px 14px;
+                          line-height: 22px;
+                        }
+                        .detail-box .img.img-top {
+                          margin-bottom: 40px;
+                        }
+                        .text.info {
+                          padding: 8.25vw;
+                        }
+                      }
+                      .detail-box .tbl.tbl-vertical {
+                        border-top: 1px solid #000;
+                      }
+                      .detail-box .tbl.tbl-vertical td,
+                      .detail-box .tbl.tbl-vertical th {
+                        padding: 13px 12px;
+                        font-size: 16px;
+                      }
+                      .detail-box .tbl.tbl-vertical th {
+                        font-family: 500;
+                        background-color: #fafafa;
+                        color: #121212;
+                        text-align: left;
+                      }
+                      .detail-box .tbl.tbl-vertical td,
+                      .detail-box .tbl.tbl-vertical th {
+                        border-bottom: 1px solid #e5e5e5;
+                        color: #121212;
+                      }
+                      @media screen and (max-width: 767px) {
+                        .detail-box .tbl.tbl-vertical td,
+                        .detail-box .tbl.tbl-vertical th {
+                          font-size: 14px;
+                        }
+                      } /* ----------------------------- 공통 타이틀 스타일 ----------------------------- */
+                      .design-tit-type01 {
+                        padding: 6px;
+                        display: inline-flex;
+                        align-items: center;
+                        border-radius: 37px;
+                        border: 2px solid #000;
+                        background: #00957c;
+                        margin-bottom: 0;
+                      }
+                      .design-tit-type01 span {
+                        display: flex;
+                        padding: 6px 16px 8px;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 28px;
+                        font-weight: 700;
+                        background-color: #fff;
+                        border-radius: 31px;
+                        border: 2px solid #000;
+                        line-height: 1.4;
+                      }
+                      .design-tit-type01.en-txt span {
+                        padding: 0px 16px 6px;
+                      }
+                      .detail-new-img-box + .design-tit-type01,
+                      .detail-new-img-box + .design-tit-type02 {
+                        margin-top: 80px;
+                      }
+                      .design-tit-type01 + .detail-large-tit,
+                      .design-tit-type02 + .detail-large-tit,
+                      .design-tit-type01 + .detail-medium-tit,
+                      .design-tit-type02 + .detail-medium-tit {
+                        margin-top: 40px;
+                      }
+                      .design-tit-type01 + .detail-body-txt,
+                      .design-tit-type02 + .detail-body-txt {
+                        margin-top: 20px;
+                      } /* ----------------------------- 둥근 타이틀 박스 ----------------------------- */
+                      .design-tit-type02 {
+                        display: flex;
+                        border-radius: 30px;
+                        overflow: hidden;
+                      }
+                      .design-tit-type02 .round-tit {
+                        padding: 16px 24px 16px 40px;
+                        background-color: #00d2b4;
+                        font-size: 28px;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                      }
+                      .design-tit-type02 .round-txt {
+                        padding: 16px 40px 16px 24px;
+                        background-color: #e7f3f1;
+                        font-size: 28px;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        color: #000;
+                        display: flex;
+                        align-items: center;
+                        flex: 1;
+                      } /* ----------------------------- 텍스트 스타일 ----------------------------- */
+                      strong.detail-large-tit {
+                        display: block;
+                      }
+                      .detail-large-tit {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 1.4;
+                      }
+                      .detail-medium-tit {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 1.4;
+                        margin-top: 20px;
+                      }
+                      .detail-body-txt {
+                        font-size: 18px;
+                        font-weight: 400;
+                      }
+                      .detail-body-caption {
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        text-align: right;
+                      } /* ----------------------------- 마진 가이드 ----------------------------- */
+                      .detail-body-caption + .detail-large-tit,
+                      .detail-body-txt + .detail-large-tit,
+                      .detail-body-txt + .design-tit-type01 {
+                        margin-top: 80px;
+                      }
+                      .detail-body-caption + .detail-body-txt {
+                        margin-top: 60px;
+                      }
+                      .detail-large-tit + .detail-large-tit,
+                      .detail-body-txt + .detail-medium-tit {
+                        margin-top: 40px;
+                      }
+                      .detail-large-tit + .detail-body-txt,
+                      .detail-large-tit + .detail-medium-tit,
+                      .detail-medium-tit + .detail-body-txt,
+                      .detail-body-txt + .detail-tbl-box {
+                        margin-top: 20px;
+                      } /* ----------------------------- 리스트 ----------------------------- */
+                      .body-list-type {
+                        margin-top: 20px;
+                      }
+                      .body-list-type > li {
+                        padding-left: 16px;
+                        position: relative;
+                      }
+                      .body-list-type > li + li {
+                        margin-top: 16px;
+                      }
+                      .body-list-type.bullet-type > li:before {
+                        content: "";
+                        position: absolute;
+                        top: 14px;
+                        left: 0;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #000;
+                        border-radius: 50%;
+                      }
+                      .body-list-type + .detail-medium-tit,
+                      .body-list-type + .detail-large-tit {
+                        margin-top: 40px;
+                      }
+                      .body-list-type + .detail-body-txt {
+                        margin-top: 20px;
+                      } /* ----------------------------- 이미지 박스 ----------------------------- */
+                      .detail-new-img-box img {
+                        width: 100%;
+                      }
+                      .detail-new-img-box .detail-body-caption {
+                        margin-top: 20px;
+                      }
+                      .detail-new-img-box .detail-medium-tit {
+                        margin-bottom: 24px;
+                        margin-top: 0;
+                      }
+                      .detail-new-img-box + .detail-large-tit,
+                      .detail-new-img-box + .detail-body-txt,
+                      .detail-new-img-box + .detail-new-img-box {
+                        margin-top: 60px;
+                      }
+                      .detail-large-tit + .detail-new-img-box,
+                      .detail-medium-tit + .detail-new-img-box,
+                      .detail-body-txt + .detail-medium-tit {
+                        margin-top: 40px;
+                      }
+                      .detail-body-txt + .detail-new-img-box {
+                        margin-top: 20px;
+                      } /* ----------------------------- 바이블 배너 ----------------------------- */
+                      .only-mo {
+                        display: none;
+                      }
+                      .author-01 {
+                        display: flex;
+                        position: relative;
+                        height: 200px;
+                      }
+                      .detail-box .author-01 .author-profile {
+                        width: auto;
+                        height: 100%;
+                      }
+                      .author-01 .author-info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: relative;
+                        height: 100%;
+                        z-index: 2;
+                        padding-left: 23px;
+                      }
+                      .author-01 .author-name {
+                        display: flex;
+                        align-items: flex-end;
+                        column-gap: 10px;
+                        margin-bottom: 10px;
+                      }
+                      .author-01 .author-name strong {
+                        font-size: 38px;
+                        line-height: 43px;
+                        color: #15c5a8;
+                        font-weight: 700;
+                      }
+                      .author-01 .author-name p {
+                        font-size: 18px;
+                        color: #15c5a8;
+                      }
+                      .author-01 .author-txt p,
+                      .author-01 .author-txt li {
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #fff;
+                      }
+                      .detail-box .author-01 .author-bg {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: auto;
+                        height: 100%;
+                      }
+                      .detail-box .author-01 .author-logo {
+                        position: absolute;
+                        top: 10px;
+                        left: 9px;
+                        width: auto;
+                        height: 17px;
+                      }
+                      .detail-box .author-01 .author-object {
+                        position: absolute;
+                        top: 0;
+                        right: 4.3%;
+                        width: auto;
+                      } /* ----------------------------- 반응형 ----------------------------- */
+                      @media screen and (max-width: 767px) {
+                        .design-tit-type01 {
+                          padding: 4px;
+                          border-radius: 27px;
+                          border: 1px solid #000;
+                        }
+                        .design-tit-type01 span {
+                          padding: 4px 12px 6px;
+                          font-size: 20px;
+                          border: 1px solid #000;
+                          border-radius: 23px;
+                        }
+                        .design-tit-type01.en-txt span {
+                          padding: 4px 12px 6px;
+                        }
+                        .design-tit-type02 {
+                          margin-top: 40px;
+                          border-radius: 22px;
+                        }
+                        .design-tit-type02 .round-tit,
+                        .design-tit-type02 .round-txt {
+                          font-size: 20px;
+                          padding: 8px 16px;
+                        }
+                        .detail-new-img-box + .design-tit-type01,
+                        .detail-new-img-box + .design-tit-type02,
+                        .detail-body-txt + .design-tit-type01 {
+                          margin-top: 40px;
+                        }
+                        .design-tit-type01 + .detail-large-tit,
+                        .design-tit-type02 + .detail-large-tit,
+                        .design-tit-type01 + .detail-medium-tit,
+                        .design-tit-type02 + .detail-medium-tit {
+                          margin-top: 20px;
+                        }
+                        .design-tit-type01 + .detail-body-txt,
+                        .design-tit-type02 + .detail-body-txt {
+                          margin-top: 16px;
+                        }
+                        .detail-large-tit {
+                          font-size: 20px;
+                        }
+                        .detail-medium-tit {
+                          font-size: 16px;
+                          margin-top: 10px;
+                        }
+                        .detail-body-txt {
+                          font-size: 16px;
+                        }
+                        .detail-body-caption {
+                          font-size: 12px;
+                        }
+                        .detail-body-caption + .detail-large-tit,
+                        .detail-body-txt + .detail-large-tit {
+                          margin-top: 60px;
+                        }
+                        .detail-body-caption + .detail-body-txt {
+                          margin-top: 40px;
+                        }
+                        .detail-large-tit + .detail-large-tit,
+                        .detail-body-txt + .detail-medium-tit {
+                          margin-top: 24px;
+                        }
+                        .detail-large-tit + .detail-body-txt,
+                        .detail-large-tit + .detail-medium-tit,
+                        .detail-body-txt + .detail-tbl-box {
+                          margin-top: 10px;
+                        }
+                        .body-list-type {
+                          margin-top: 10px;
+                        }
+                        .body-list-type > li + li {
+                          margin-top: 10px;
+                        }
+                        .body-list-type.bullet-type > li:before {
+                          top: 12px;
+                        }
+                        .body-list-type + .detail-medium-tit,
+                        .body-list-type + .detail-large-tit {
+                          margin-top: 24px;
+                        }
+                        .body-list-type + .detail-body-txt {
+                          margin-top: 10px;
+                        }
+                        .detail-new-img-box .detail-body-caption {
+                          margin-top: 10px;
+                        }
+                        .detail-new-img-box .detail-medium-tit {
+                          margin-bottom: 16px;
+                        }
+                        .detail-new-img-box + .detail-large-tit,
+                        .detail-new-img-box + .detail-body-tsxt,
+                        .detail-new-img-box + .detail-new-img-box {
+                          margin-top: 40px;
+                        }
+                        .detail-large-tit + .detail-new-img-box,
+                        .detail-body-txt + .detail-medium-tit,
+                        .detail-medium-tit + .detail-new-img-box {
+                          margin-top: 24px;
+                        }
+                        .detail-body-txt + .detail-new-img-box {
+                          margin-top: 10px;
+                        } /* 바이블 배너 */
+                        .only-mo {
+                          display: block;
+                        }
+                        .author-01 {
+                          justify-content: space-between;
+                          aspect-ratio: 312/200;
+                          height: auto;
+                          overflow: hidden;
+                        }
+                        .detail-box .author-01.buyble-box .author-profile {
+                          margin-left: 0;
+                        }
+                        .author-01 .author-info {
+                          flex: 1;
+                          display: block;
+                          text-align: right;
+                          padding-top: 28%;
+                          padding-left: 0;
+                          padding-right: 13px;
+                        }
+                        .author-01 .author-name {
+                          justify-content: flex-end;
+                          column-gap: 6px;
+                          margin-bottom: 5px;
+                        }
+                        .author-01 .author-name strong {
+                          font-size: clamp(11px, 5.5vw, 42px);
+                          line-height: 1.2;
+                          letter-spacing: -0.025em;
+                        }
+                        .author-01 .author-name p {
+                          font-size: clamp(11px, 4.4vw, 33px);
+                          line-height: 1.2;
+                        }
+                        .author-01 .author-txt p,
+                        .author-01 .author-txt li {
+                          font-size: clamp(8px, 2.2vw, 20px);
+                          line-height: 1.3;
+                        }
+                        .detail-box .author-01 .author-bg {
+                          width: 100%;
+                        }
+                        .detail-box .author-01 .author-logo {
+                          height: 4.7vw;
+                        }
+                        .detail-box .author-01 .author-object {
+                          right: 17px;
+                          width: 39.4%;
+                        }
+                      } /* table */
+                      .detail-tbl-box table {
+                        width: 100%;
+                        border-top: 1px solid #000;
+                      }
+                      .detail-tbl-box .tbl-multi th,
+                      .detail-tbl-box .tbl-multi td {
+                        padding: 13px 12px;
+                      }
+                      .detail-tbl-box .tbl-multi td,
+                      .detail-tbl-box .tbl-multi th {
+                        border-bottom: 1px solid #ddd;
+                      }
+                      .detail-tbl-box .tbl-multi th {
+                        font-size: 14px;
+                        color: #121212;
+                        text-align: left;
+                      }
+                      .detail-tbl-box .tbl-multi thead th {
+                        background-color: #f4f4f4;
+                        font-weight: 700;
+                      }
+                      .detail-tbl-box .tbl-multi tbody th {
+                        background-color: #fafafa;
+                        font-weight: 600;
+                      }
+                      .detail-tbl-box .tbl-multi td {
+                        font-size: 14px;
+                        color: #121212;
+                      }
+                      .detail-tbl-box .tbl-normal td,
+                      .detail-tbl-box .tbl-normal th {
+                        padding: 13px 12px;
+                        font-size: 16px;
+                        text-align: left;
+                      }
+                      .detail-tbl-box .tbl-normal th {
+                        font-weight: 600;
+                        background-color: #f4f4f4;
+                        color: #121212;
+                        text-align: left;
+                      }
+                      .detail-tbl-box .tbl-normal td,
+                      .detail-tbl-box .tbl-normal th {
+                        border-bottom: 1px solid #e5e5e5;
+                        color: #121212;
+                      }
+                      @media screen and (max-width: 767px) {
+                        .detail-tbl-box .tbl-normal td,
+                        .detail-tbl-box .tbl-normal th {
+                          font-size: 14px;
+                        }
+                      } /* 저자 영역 배너 */
+                      .only-mo {
+                        display: none;
+                      }
+                      .only-pc {
+                        display: block;
+                      }
+                      .author-02 {
+                        display: flex;
+                        position: relative;
+                        background-color: #fff;
+                        border: 1px solid #d5d5d5;
+                        min-height: 200px;
+                      }
+                      .author-02 > picture {
+                        align-items: flex-end;
+                      }
+                      .detail-box .author-02 .author-profile {
+                        width: 230px;
+                        height: 100%;
+                        object-fit: cover;
+                      }
+                      .author-02 .author-info {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding: 10px 155px 10px 30px;
+                      }
+                      .author-02 .author-info::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 1px;
+                        height: 120px;
+                        transform: translateY(-50%);
+                        background-color: #d5d5d5;
+                      }
+                      .author-02 .author-name {
+                        display: flex;
+                        align-items: flex-end;
+                        column-gap: 6px;
+                        margin-bottom: 10px;
+                      }
+                      .author-02 .author-name strong {
+                        font-size: 34px;
+                        line-height: 43px;
+                      }
+                      .author-02 .author-name p {
+                        font-size: 16px;
+                      }
+                      .author-02 .author-txt {
+                        position: relative;
+                        z-index: 1;
+                      }
+                      .author-02 .author-txt p,
+                      .author-02 .author-txt li {
+                        font-size: 14px;
+                        line-height: 18px;
+                      }
+                      .detail-box .author-02 .author-logo {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        width: auto;
+                        height: 20px;
+                      }
+                      .detail-box .author-02 .author-object {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: auto;
+                        height: auto;
+                      }
+                      @media screen and (max-width: 767px) {
+                        .only-mo {
+                          display: block;
+                        }
+                        .only-pc {
+                          display: none;
+                        }
+                        .author-02 {
+                          aspect-ratio: 312/200;
+                          min-height: 0;
+                        }
+                        .detail-box .author-02 .author-profile {
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          width: auto;
+                          height: 100%;
+                        }
+                        .author-02 .author-info {
+                          width: 100%;
+                          padding: 10px 15px;
+                          text-align: right;
+                        }
+                        .author-02 .author-info::before {
+                          display: none;
+                        }
+                        .author-02 .author-name {
+                          justify-content: flex-end;
+                          column-gap: 3px;
+                        }
+                        .author-02 .author-name strong {
+                          font-size: clamp(11px, 7.2vw, 42px);
+                          line-height: 1.2;
+                        }
+                        .author-02 .author-name p {
+                          font-size: clamp(11px, 3.8vw, 33px);
+                          line-height: 1.2;
+                          margin-bottom: 1px;
+                        }
+                        .author-02 .author-txt p,
+                        .author-02 .author-txt li {
+                          font-size: clamp(8px, 2.2vw, 20px);
+                          line-height: 1.3;
+                        }
+                        .detail-box .author-02 .author-logo {
+                          top: 10px;
+                          left: 10px;
+                          right: auto;
+                          height: 4.16vw;
+                        }
+                        .detail-box .author-02 .author-object {
+                          width: 16.667%;
+                        }
+                      }
+                    </style>
+                    <style>
+                      .flex-wrap > p + p {
+                        margin-top: 5px;
+                      }
+                      .flex-wrap > .flex {
+                        display: flex;
+                        gap: 5px;
+                      }
+                    </style>
+                    <div class="btn-box align-center">
+                      <a
+                        href="#"
+                        class="btn btn-sm btn-blue js-open-whitepaper-form"
+                        role="button"
+                        >백서 다운로드</a
+                      >
+                    </div>
+                    <div class="img">
+                      <!-- 출처 표시 -->
+                      <div class="source-area" style="padding: 18px 20px 14px; height: auto; line-height: 32px">
+                        <p>출처 : 물류신문, 장창훈<span>2026. 1. 6</span></p>
+                      </div>
+                      <!-- //출처 표시 -->
+                    </div>
+                    <div class="text">
+                      <div class="detail-new-img-box">
+                        <img
+                          src="/static/assets-new/blog-content-images/4aa84edb-7aab-4cdf-9fa4-35ae13642767.jpg"
+                          alt="자동화 설비가 적용된 대형 물류창고 내부 전경으로, 고층 랙에 팔레트가 체계적으로 적재되어 있으며 물류 보관 및 운영 효율화를 위한 현대적인 창고 환경을 보여주는 이미지"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                      </div>
+                      <!-- 1. -->
+                      <p class="detail-body-txt">
+                        지난 10여 년간 글로벌 물류 산업은 자동화와 디지털 전환이라는 거대한 흐름 속에서 새로운 기술을
+                        이용한 효율적이고 안전한 창고 관리(Warehouse Management)를 연구하고 발전시켜 왔다. 그 과정
+                        속에서 드론(Drone)을 이용한 기술은 야외에서의 단순한 영상 촬영이나 점검을 넘어, 창고 내부의
+                        실내라는 제한된 공간에서도 활용될 수 있도록 많은 발전을 이뤄왔다. 특히, 2015년 이후 딥 러닝(Deep
+                        Learning) 기술이 실용화되면서 인공지능(Artificial Intelligence, AI) 기반의 항법 기술, 실내 위치
+                        추정, 컴퓨터 비전 기술(Computer Vision Technology) 등의 비약적인 발전을 이루면서, GPS(Global
+                        Positioning System)가 작동하지 않는 실내에서도 드론의 자율비행이 가능한 기술적 기반이 갖추어지기
+                        시작했다.
+                      </p>
+                      <h2 class="detail-large-tit">1. 드론 기술의 발전과 산업적 활용</h2>
+                      <p class="detail-body-txt">
+                        드론은 조종사가 탑승치 않고 무선전파를 이용하여 지상에서 원격조종(Remote piloted)을 하는
+                        무인항공기를 말하며, 미리 정해진 항로에 따라 비행하는 자동비행(Auto-piloted)과 반자동
+                        비행(Semi-auto-piloted)으로 경로를 선택하여 비행하는 무인항공기이다. <br />
+                        <br />
+                        드론은 2000년대 초반에 등장하였으며, 처음 개발될 때에는 군사용 목적이었다. 드론은 미국 공군
+                        미사일 폭격의 연습 대상이었으나, 점차 활용도가 높아져 공격기와 정찰기로 용도가 바뀌었다. 장점은
+                        조종사가 탑승하지 않고 적의 동태를 파악하고 폭격기의 역할까지 할 수 있다는 점으로, 미국은 군사용
+                        무기로 2000년대 중반부터 드론을 적극적으로 활용하게 되었으며, 통상적으로 UAV(Unmanned Aerial
+                        Vehicle)를 말한다. <br />
+                        <br />
+                        드론은 1917년 미국에서 최초로 개발되었으며, 초기에는 군사용으로 개발되었다. 주 임무는 100[kg]
+                        가량을 무인항공기에 폭탄을 적재하고 비행하는 군사 업무용이었으나, 영국에서 1930년대 초에 개발한
+                        UAV Queen Bee가 처음으로 왕복 비행이 가능해지면서 드론의 원조라고 평가되고 있다. 제2차 세계대전
+                        중이던 1944년 독일에 의하여 개발된 V-1은 자폭형으로 만들어진 드론으로 많은 인명과 재산피해를
+                        발생하게 만들었고, 베트남전에서 선 보인 최초의 무인정찰기는 1951년 생산된 미국의 무인기인 Fire
+                        Bee Drone으로써 주로 정찰임무 등이 주 임무였다. <sup>[1]</sup> <br />
+                        <br />
+                        무인항공기로 분류되는 드론의 역사는 이미 지난 냉전시대부터 이어져 왔지만, 군사적 영역을 넘어서
+                        다양한 분야에 사용되기 시작한 것은 최근의 일이다. 용도에 따라 드론의 형태는 다양한 모습으로
+                        개발되어 왔으며, 특히, 기상관측이나 각종 사회 인프라 조사 등에 활용되어 왔다. <sup>[2]</sup>
+                      </p>
+                      <h2 class="detail-large-tit">2. 운송수단으로서 드론의 활용 사례</h2>
+                      <p class="detail-body-txt">
+                        드론의 응용 사례로는 군사적 목적 이외에 주로 기상 정보 및 예측, 언론사의 경우 드론에 촬영용
+                        카메라를 탑재하여 스포츠 중계나 해외 탐사, 사고 현장 촬영 등에 많이 사용하고 있으며, 농업연구,
+                        광고 등에서 활용하고 있다. 또한, 구조물자나 의약품을 조난지역에 배송하는 역할도 하고 있다.
+                        <br />
+                        <br />
+                        해외의 경우는 글로벌 종합 물류 서비스 &lsquo;DHL&rsquo;, 풀필먼트 서비스를 제공하는 플랫폼 기반
+                        커머스 &lsquo;아마존&rsquo; 등의 글로벌 기업을 주축으로 드론의 화물 배송 운송수단으로 드론의
+                        활용을 확대하고 상용화를 추진하였으나, 보안문제 및 기술적 보완 등의 문제점으로 많이 남아있다.
+                        <br />
+                        아마존에서는 2013년 드론에 GPS를 장착하고 배송하는 &ldquo;프라임 에어(Prime Air)&rdquo; 서비스를
+                        공개하여 시범 비행을 진행했으며, 모든 화물을 30분 이내로 배송한다는 원칙과 최대 16km의 배송이
+                        가능하다. 2017년에는 프라임 에어가 드론 배송에 성공하여 유통&middot;물류업계의 관심과 드론
+                        상용화를 기대하고 있다. 아래 이미지는 아마존에서 개발한 프라임 에어이다.
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title">[아마존의 프라임 에어 이미지]</span>
+                        <img
+                          src="/static/assets-new/blog-content-images/a1fa1937-e417-464d-9406-2afc9791f83b.png"
+                          alt="배송용 화물을 적재한 드론이 야외 환경에서 비행 중이며, 드론 기반 물류 배송과 스마트 물류 운영 기술을 시각적으로 보여줌"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처 : 블룸버그) </span>
+                      </div>
+                      <p class="detail-body-txt">
+                        아마존의 프라임 에어 서비스와 아프리카 대륙에서의 플라잉 동키(Flying Donkey)의 사례를 바탕으로
+                        한 연구에서는 아마존의 프라임 에어 서비스는 고객이 주문한 상품을 드론을 이용해 고객에게 전달하는
+                        서비스로서, 각종 미디어 매체나 소셜 네트워크에서의 반응은 현재까지도 서비스가 성공적으로
+                        수행되고 있다는 평가이다. <br />
+                        <br />
+                        또한, 아프리카의 플라잉 동키는 지상으로 접근이 쉽지 않은 오지에 사는 사람들에게 드론을 이용한
+                        의약품을 전달하는 프로젝트를 준비중에 있다. 상기의 사례들은 드론을 실생활에 적용했거나 하려고
+                        준비하는 부문이다. 드론 운영에 대한 규정이나 기준 등에 대해서는 여전히 풀어야 할 과제가 있으나,
+                        드론의 기술적인 면은 드론의 안전성과 효율성 등에 긍정적인 영향을 준다. <sup>[4]</sup> <br />
+                        <br />
+                        더불어, 드론이 환경에 미치는 영향에 대하여 물류 배송의 최종 단계에서 사용될 수 있는 드론의 탄소
+                        환산량과 트럭, 전기자동차 등의 탄소 환산량과의 효과적인 비교를 통해 드론의 친환경적 요소를
+                        연구한 사례도 있다. <sup>[5]</sup> <br />
+                        <br />
+                        아마존은 2015년에 FAA(Federal Avistion Administration)에 서비스의 상용화를 위한 목표로 드론의
+                        운행 승인을 요청하였고, 미국특허청(United States Patent and Trademark Office, USPTO)에 2017년
+                        6월 22일 아마존에서 &ldquo;무인항공기를 위한 다층 물류센터&rdquo;라는 이름으로 특허 출원하였다.
+                        <br />
+                        <br />
+                        제출된 특허에 의하면 드론 물류센터는 긴 원통모양 건물에 드론용 출입구의 수십 개를 통하여 드론이
+                        동시에 화물을 싣고 배송이 가능하며, 이륙&middot;착륙을 할 수 있도록 설계되었다고 한다.
+                        <sup>[6]</sup>
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title">[드론 물류센터 설계도 이미지]</span>
+                        <img
+                          src="/static/assets-new/blog-content-images/4f1e95d9-0b55-4982-95a5-2b4498efd82f.png"
+                          alt="다층 구조의 물류창고 외부를 중심으로 여러 대의 드론이 상&middot;하&middot;수평 방향으로 이동하며 물류를 운송하는 개념도로, 드론 기반 창고 관리 및 입출고 물류 흐름을 단계적으로 표현함"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처 : 미국 특허청(USPTO)) </span>
+                      </div>
+                      <p class="detail-body-txt">
+                        한편, 2014년 DHL에서 자체개발에 성공한 파슬콥터(Parcelcopter)는 외곽 지역 배송을 자동 비행이
+                        가능하도록 설계된 드론이며, 약품을 배송하는 테스트에 합격했다. <br />
+                        <br />
+                        초창기 물류에서의 드론은 물류 배송(택배산업)의 역할을 하였으나, 점차 물류 센터내에서의
+                        창고관리시스템 분야로 확장되고 있다. <br />
+                        <br />
+                        이러한 기술적 전환은 전통적으로 인력 중심이었던 물류 창고의 재고관리 업무에 새로운 패러다임을
+                        열어 주었고, 여러 글로벌 기업과 연구 기관은 드론이 자율 주행 로봇과 함께 창고 자동화의 핵심
+                        도구로 성장할 수 있는 가능성을 적극 탐색하기 시작하였다. 드론의 도입 초기에는 역할이 매우
+                        제한적으로, 수동 조종 상태에서 바코드를 촬영하거나 상단 랙(Rack)의 라벨을 확인하는 수준이었으나,
+                        작업자의 고소 작업을 대체할 수 있다는 점에서 관심을 받았다. 하지만, 당시에는 충돌 위험, 위치
+                        오차, 배터리 지속시간 등의 문제로 대규모 상용화는 어려웠다. <br />
+                        <br />
+                        2019년 8월, 스위스 ETH 취리히(ETH Zurich) 가 발표한 백서 &ldquo;Whitepaper: Applications of
+                        drones in warehouse operations&rdquo;에서 내부 물류센터에서 드론의 역할을 체계적으로 분류하고
+                        분석하였다. 이 백서는 드론이 창고에서 수행할 수 있는 작업을 &lsquo;재고관리-Inventory
+                        Management&rsquo;, &lsquo;실내물류이동-Intra-Logistics&rsquo;, &lsquo;점검 및 감시-Inspection
+                        &amp; Surveillance&rsquo;라는 세 가지 범주로 구분하며 드론을 하나의 로봇 시스템으로 바라보는
+                        기초를 제공했다.
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title">[드론 기반 Warehouse Management의 세 가지 적용 영역]</span>
+                        <img
+                          src="/static/assets-new/blog-content-images/e544e5b9-ed8d-44d2-b590-3eef2f222644.jpg"
+                          alt="드론을 활용한 물류 활용 사례를 아이콘으로 표현한 구성으로, 재고 관리, 창고 내 물류 이동(Intra-Logistics), 시설 점검 및 감시 기능을 각각 시각화함"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처: Wawla, 2019 Whitepaper) </span>
+                      </div>
+                      <p class="detail-body-txt">
+                        또한, 이 백서에서는 물류 창고 관리에 드론을 사용한다면 비교적 큰 규모의 창고이며, 최소 5미터
+                        이상의 높고, 긴 복도형이며 겹치지 않게 쌓아 놓은 경우에 가장 효과적인 결과를 얻을 수 있을
+                        것이라고 제안하였다. <sup>[7]</sup>
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title">[드론 기반 Warehouse Management의 특성]</span>
+                        <img
+                          src="/static/assets-new/blog-content-images/57303b1d-f26e-4efc-b422-d8b1667feb19.png"
+                          alt="드론 활용에 적합한 물류창고 특성을 정리한 인포그래픽으로, 1만㎡ 이상의 대형 창고, 50미터 이상 길이의 복도, 5미터 이상 높은 랙 구조, 단일 깊이 팔레트 랙 환경 등이 드론 기반 재고 관리 및 점검에 유리한 조건임을 항목별로 설명함"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처: Wawla, 2019 Whitepaper) </span>
+                      </div>
+                      <p class="detail-body-txt">
+                        2019년 이후 드론 기반 실내 재고조사 솔루션이 시장에 등장하면서 산업 현장에서 드론의 위치는
+                        빠르게 변화했다. 스위스 Verity는 SLAM(Simultaneous localization and mapping, 동시적 위치 추정 및
+                        지도작성) 기반 실내 자율비행 기술을 상용화하여 글로벌 제조 기업의 대규모 창고에서 야간
+                        재고조사를 수행하고 있으며, 미국 Corvus Robotic는 MIT 기반 기술을 활용해 &lsquo;조명
+                        없는(lights-out)&rsquo; 창고에서도 정기 재고조사가 가능한 시스템을 구축했다. 유럽 EYESEE와 독일
+                        inventAIRy XL 역시 오래된 랙 구조나 금속 밀집 환경에서도 안정적인 촬영 및 데이터 수집이
+                        가능하도록 특화된 솔루션을 제공하고 있다. <br />
+                        <br />
+                        이런 솔루션의 도입은 기존의 인력 중심 재고 작업을 획기적으로 변화시켰고, 특히 인건비가 높고 인력
+                        수급이 어려운 북미&middot;유럽의 제조업&middot;리테일 분야 기업들 사이에서 빠르게 확산되었다.
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title"
+                          >[스위스 Verity, 유럽 EYESEE, 독일의 inventAIRy XL 사의 드론 이미지]</span
+                        >
+                        <img
+                          src="/static/assets-new/blog-content-images/99f7d279-2e2c-4f49-8c0f-3b0a52fed343.jpg"
+                          alt="물류창고 내부에서 드론이 선반 사이를 비행하며 재고를 인식&middot;점검하고, 자율주행 장비와 연계해 물류 박스를 운송하는 장면으로 드론 기반 재고 관리와 창고 내 물류 자동화를 보여줌"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처: 각 사 Webpage) </span>
+                      </div>
+                      <h2 class="detail-large-tit">3. 글로벌 물류 산업에서의 드론 활용 현황</h2>
+                      <p class="detail-body-txt">
+                        해외에서 확인되는 드론의 활용 방식은 주로 물류 창고 내 재고 관리에 집중된다. 드론은 자동 충전
+                        스테이션에서 이륙해 랙 사이를 비행하며 바코드 또는 라벨의 이미지를 촬영하고, RFID(Radio
+                        Frequency Identification) 신호를 읽어내며, 컴퓨터 비전 기술(Computer Vision Tech)을 통해
+                        팔레트(Pallet)나 빈(Bin)의 적치 상태를 분석한다. 이후 수집된 데이터는 SAP, Oracle 등 기존
+                        창고관리시스템(Warehouse Management System, WMS)으로 실시간 연동되어, 재고 오차 감소와 함께
+                        사이클 카운팅(정해진 주기에 따라 특정 품목의 재고만 주기적으로 실사하여 실제 재고와 장부상
+                        재고를 일치시키는 방법으로서 재고 정확도를 유지하는 기법)의 빈도를 높여 운영 효율성을 강화한다.
+                        이 과정에서 드론은 고소작업을 안전하게 대체하고, 사람이 접근하기 어려운 공간에서도 정확한
+                        데이터를 확보할 수 있다는 장점이 있다. 실제로 많은 해외 물류센터에서는 드론이 매일 또는 매주
+                        야간에 정해진 구역을 스캔하며, 사람은 그 데이터를 확인하고 예외 상황을 처리하는 방식으로 역할이
+                        변화하고 있다. <br />
+                        <br />
+                        구체적인 해외 사례를 보면, 스위스의 Verity는 가장 대표적인 상용화 성공 사례로 꼽힌다. 이 회사는
+                        SLAM 기반의 솔루션을 제공하며 GPS 없이 야간∙무조명 창고에서 자동 이륙, 비행, 착륙, 충전,
+                        보고까지 수행한다. 랙 사이 20-30cm 간격에서도 자율 비행이 가능하다고 알려져 있다. 별도의 마커나
+                        비콘 없이 창고 내 구조를 인식하고 이동할 수 있다. <br />
+                        <br />
+                        센소다인(Sensodyne), 파나돌(Panadol) 등으로 유명한 글로벌 헬스케어 기업인 Haleon은 Verity
+                        솔루션을 도입해 재고 불일치를 줄여 99.8%의 정확한 재고관리를 수행하고 있으며 이를 통해 정시 완전
+                        배송률이 95% 이상으로 안정적으로 향상되었다. 또한, 드론 솔루션은 창고 작업자의 안전도
+                        개선하였다. 작업자가 높은 선반에 올라가 바코드를 스캔해야 하는 고소작업을 반복적으로 수행하면서
+                        발생하던 안전 문제도 크게 줄였다고 보고되고 있다. 미국의 Corvus Robotics는 MIT 기반 기술로
+                        출발해 &lsquo;무조명 창고&rsquo;에서도 운영이 가능한 시스템을 내세우며 주목받고 있다. 인디애나의
+                        LAPP USA 창고에서는 Corvus 드론의 도입을 통해 재고조사에 소요되는 시간이 절반 이상 단축되었고,
+                        재고 정확도가 높아져 주문 처리 속도가 개선되었다. 유럽에서는 지연, 리스크, 이상 상황을 조기에
+                        감지하고 예측까지 돕는 플랫폼 &lsquo;EYESEE&rsquo; 등이 오래된 창고나 구조적으로 복잡한
+                        창고에서도 드론을 운영할 수 있도록 라벨 촬영과 이미지 기반 재고 분석 기능을 최적화한 사례로
+                        평가받고 있다.
+                      </p>
+                      <h2 class="detail-large-tit">4. 국내 물류 분야에서의 드론 활용 사례</h2>
+                      <p class="detail-body-txt">
+                        한국의 도입 현황은 해외에 비해 상대적으로 느리지만, 최근 몇 년간 의미 있는 사례가 조금씩
+                        등장하고 있다. 한국 물류기업들은 자동화 설비와 로봇 도입에 적극적이지만, 드론은 규제 해석과 안전
+                        기준의 모호함 때문에 대규모 적용보다는 시험적 도입에 머물러 있는 경우가 많다. 그 중에서 A사는
+                        가장 이른 시기인 2016년부터 드론 기반 재고 관리 실험을 시작한 기업으로 알려져 있다. 이 회사는
+                        물류 센터 전용 드론 연구 개발 등을 진행하였다. <sup>[10]</sup> <br />
+                        <br />
+                        또한, 정부에서는 2017년 4월 loT와 드론 기술을 활용한 사회기반시설 및 공공 인프라의 유지관리와
+                        안전성 효율을 극대화시키겠다고 발표했다. <sup>[11]</sup> <br />
+                        <br />
+                        B사의 물류센터에서는 드론과 스마트 안경(Smart Glass)를 이용한 스마트 물류 기술을 공개한 바 있다.
+                        드론을 이용한 신속하고 정확한 재고 관리와 작업자가 착용한 스마트 안경을 통해 효율적이고 경쟁력
+                        있는 스마트 물류 시스템을 구축하겠다고 발표하였다. <sup>[12]</sup> <br />
+                        <br />
+                        C사의 경우에는 재고관리보다는 시설 점검과 안전 관리 분야에서 드론을 적극 활용하는 방향으로
+                        접근했다. C사의 물류센터는 랙 높이가 높고 내부 구조가 복잡하기 때문에 사람이 접근하기 어려운
+                        구역이 많다. 하여, 드론을 활용해 화재 위험이 있는 전기 장비 주변을 상시 모니터링하거나 고층 랙의
+                        구조 변형을 점검하는 방식의 파일럿 테스트가 진행되었고, 열화상 카메라를 탑재해 야간 감시 기능을
+                        강화하는 실험도 수행된 것으로 알려져 있다. <br />
+                        <br />
+                        A, B, C 사는 물류 센터내에서 보세화물이 아닌 내국물품에 한정되어 운영되며 재고 관리(물품의 종류,
+                        유통기한 등)를 목적으로 개발되었다. 창고(센터)내에 카메라를 장착한 드론을 사전 학습된 경로로
+                        비행하며 카메라로 촬영 후 메인 컴퓨터로 전송하여 시스템상의 재고와 실제재고를 확인하는 역할을
+                        수행하며, 높은 고도에 있는 화물 정보를 확인할 수 있어 재고조사에 투입되는 인원 및 시간의
+                        절감효과가 있다. 다만 아쉬운 부분은 보세화물이 아닌 내국물품에 한정되어 운영될 수 밖에 없다는
+                        점이다. <sup>[3]</sup> <br />
+                        <br />
+                        인천항만공사의 경우, 2021년 &lsquo;드론을 이용한 물류창고 재고조사 자동화 서비스 개발&rsquo;
+                        사업을 발표하였으며, 재고 조사 비용 절감, Data 정확도 향상, 재고 위치 시각화 등을 위해 AI 기반의
+                        완전 자율 비행 드론 기반의 창고 관리 시스템 운영 등을 목표로 시행하였으며, 2022년 말 물류창고
+                        재고 조사가 실증단계에 이르렀다고 발표한 바 있다. <sup>[13]</sup>
+                        <sup>[14]</sup> 인천국제공항공사도 작업자가 작업하기엔 위험한 고소 작업을 드론을 이용하여 안전
+                        점검을 시행한 바 있다.
+                      </p>
+                      <div class="detail-new-img-box img">
+                        <span class="im_title">[인천 신항 컨테이너 터미널 이미지]</span>
+                        <img
+                          src="/static/assets-new/blog-content-images/7a485365-472f-4fa9-88b0-0415a7df3a6f.jpg"
+                          alt="해 질 무렵 대형 항만 컨테이너 터미널 전경으로, 크레인과 다수의 컨테이너가 정렬된 모습이 글로벌 해상 물류 및 항만 운영 환경을 보여줌"
+                          style="
+                            vertical-align: baseline;
+                            border-width: 0px;
+                            border-style: solid;
+                            border-color: rgb(0, 0, 0);
+                          "
+                          title=""
+                        />
+                        <span class="im_info align-right"> (출처: 인천항만공사) </span>
+                      </div>
+                      <h2 class="detail-large-tit">5. 드론 기반 창고관리 기술의 발전과 과제</h2>
+                      <p class="detail-body-txt">
+                        드론 기반 창고관리 기술이 확산되는 과정에서 나타난 성과와 한계는 기술적&middot;경제적 측면에서
+                        모두 의미 있는 분석을 가능하게 한다. 먼저 성과 측면에서 가장 두드러지는 것은 재고 정확도의
+                        향상이다. 여러 해외 기업의 실제 보고와 연구 결과를 종합하면, 드론 기반 재고 스캔 시스템을 적용할
+                        경우 기존 인력 중심 재고조사 대비 재고 정확도가 93% 수준에서 98~99% 수준까지 향상되는 것으로
+                        나타난다. <sup>[9]</sup> 이는 결국 주문 정확도 향상, 리드타임 단축, 안전재고 축소 등으로 이어져
+                        물류비 절감에 기여한다. <br />
+                        <br />
+                        또한 드론은 작업자의 고소작업을 대체하여 안전사고 발생을 줄이고, 야간 자동화를 통해 작업자의
+                        휴식&middot;근무 환경 개선에도 긍정적인 영향을 준다. 인력 수급이 어려운 시기에는 드론이 일정
+                        부분 인력 부담을 줄여주는 역할을 하기도 한다. <br />
+                        <br />
+                        반면 기술적 한계도 여전히 존재한다. 대표적으로 배터리 지속시간이 짧아 한 번의 비행으로 넓은
+                        창고를 모두 스캔하기 어렵다는 점이 있다. 이를 해결하기 위해 자동 충전 스테이션을 다수 배치하거나
+                        여러 대의 드론을 동시에 운영해야 하는데, 이는 설비비 증가와 운영 복잡성 증가로 이어진다. 라벨
+                        인식률 또한 완벽하지 않은데, 손상된 바코드나 금속 랙에서 발생하는 RFID 신호 반사 문제 등은 아직
+                        해결해야 할 과제로 남아 있다. 더욱 중요한 문제는 WMS&middot;ERP와의 연동이다. 드론이 데이터를
+                        수집하는 것만으로는 의미가 없고, 이를 실시간 재고관리 체계와 연결해 운영 프로세스 전반을
+                        변화시키는 것이 핵심이기 때문이다. 이 때문에 글로벌 기업들은 드론 도입을 &ldquo;기술
+                        프로젝트&rdquo;가 아니라 &ldquo;창고 운영방식 혁신 프로젝트&rdquo;로 접근하는 경향이 강하다.
+                        <br />
+                        <br />
+                        규제와 정책 환경 역시 드론 기술 확산의 중요한 변수다. 실내 드론 비행은 국가 항공법 적용이
+                        미비하여 제도적 공백이 발생하는 영역이 많다. 특히 한국은
+                        안전&middot;소음&middot;보험&middot;책임 문제에서 기업들이 보수적으로 접근하는 경향이 있어
+                        대규모 상용화가 지연되고 있다. 반면 유럽이나 미국은 민간 보험사&middot; 규제
+                        기관&middot;산업계가 협력해 실내 드론 운영 가이드라인을 빠르게 마련하고 있으며,
+                        싱가포르&middot;UAE 등은 국가 차원의 스마트 물류 전략에 드론 재고관리 장비를 포함해 실증을
+                        추진하고 있다. <br />
+                        <br />
+                        이러한 글로벌 및 국내 흐름을 고려할 때 향후 드론 기반 창고관리 기술은 몇 가지 방향으로 발전할
+                        것으로 예상된다. 첫째, 다중 드론 협업 기술이 고도화될 가능성이 높다. 현재는 한 대의 드론이 한
+                        구역을 스캔하는 방식이 일반적이지만, 앞으로는 여러 대의 드론이 창고 전체를 분담해 효율적으로
+                        비행하는 구성으로 발전할 것이다. <br />
+                        <br />
+                        둘째, 센서 융합 기술이 빠르게 개선될 것이다. 바코드, OCR(Optical Character Recognition), RFID,
+                        3D 비전(Three-Dimensional Vision), LiDAR(Light Detection and Ranging) 이 결합한 복합 인식 기술이
+                        도입되면 기존의 라벨 인식 문제나 금속 구조물에서의 왜곡 문제를 상당 부분 해소할 수 있다. <br />
+                        <br />
+                        셋째, 창고관리시스템과의 통합 수준이 더욱 높아질 것이다. 드론이 단순 스캐너 역할에 그치지 않고,
+                        무인운반차(Automated Guided Vehicle, AGV), 자율이동로봇(Autonomous Mobile Robot, AMR), 로봇 팔,
+                        자동 적치 시스템과 연결되는 디지털 트윈 기반의 지능형 창고로 확장될 것이라는 전망도 이미 여러
+                        논문과 컨설팅 보고서에서 제기되고 있다. <br />
+                        <br />
+                        우리나라의 경우, 향후 정책적 뒷받침과 실증기반 확대가 이루어진다면 글로벌 수준의 기술 도입이
+                        오히려 빠르게 진행될 가능성이 크다. 우리나라는 정보통신기술(Information and Communication
+                        Technology, ICT) 과 로보틱스 기반이 강하고, 대형 물류허브 운영 역량도 높기 때문에 드론 기반
+                        창고관리 기술과 궁합이 좋은 편이다. 특히 정부의 스마트물류센터 인증제, 디지털 물류체계 전환
+                        정책, 공항&middot;항만의 자동화 사업들이 드론 도입과 맞물릴 경우 파급효과는 더 커질 것이다.
+                        <br />
+                        <br />
+                        또한 대학과 기업, 정부가 협력하는 실증센터에서 장기적인 테스트베드(Testbed)를 제공한다면 산업
+                        도입은 훨씬 빨라질 수 있다. <br />
+                        <br />
+                        종합적으로 볼 때 드론 기반 창고관리시스템은 이미 해외에서는 상용화 단계로 진입했으며,
+                        우리나라에서도 점진적으로 활용 범위가 확대되는 중이다. 앞으로 기술 성숙도, 정책 정비, 산업계의
+                        조직적 수용성이라는 세 가지 요소가 균형 있게 발전한다면, 드론은 물류센터 운영의 핵심 자산 중
+                        하나로 자리 잡을 것으로 보인다. 결국 드론 기술은 단순히 &lsquo;비행하는 카메라&rsquo;가 아니라,
+                        창고 운영의 흐름을 바꾸는 디지털 전환 기술로서 그 의미가 더욱 크게 확장되고 있으며, 이는 향후
+                        우리나라 물류시장에도 중요한 전략적 전환점이 될 것이다.
+                      </p>
+                      <!-- Reference -->
+                      <strong class="title"># Reference</strong>
+                      <div class="detail-body-txt flex-wrap">
+                        <p>[1] 권희춘, (2017), &ldquo;4차 산업혁명과 미래치안기술&rdquo;, 경찰대학교</p>
+                        <p>
+                          [2] Dalamagkidis. (2015) Aviation History and Unmanned Flight, Handbook of Unmanned Aerial
+                          Vehicles. Springer, Dordrecht
+                        </p>
+                        <p>
+                          [3] 백남진 (2018) 4차 산업형 항공물류시스템 구축을 위한 드론 적용 방안에 관한 연구,
+                          서울과학기술대학교
+                        </p>
+                        <p>
+                          [4] Figliozzi, Miguel, (2017), Drones for Commercial Last-Mile Deliveries: A Discussion of
+                          Logistical, Environmental, and Economic Trade-Offs, Civil and Environmental Engineering
+                          Faculty Publications and Presentations. 416.
+                        </p>
+                        <p>
+                          [5] Helena Chalupnickova, Pavel Bahensky, V Sykora, Daniela Heralova, (2014),<br />
+                          &ldquo;The Use of Drones in Air Cargo Transportation&rdquo;. eXclusive e-Journal Economy &amp;
+                          Society &amp; Environment. ISSN 1339-4509
+                        </p>
+                        <p>
+                          [6] N. J. Baik, N. K. Baik, M. W. Lee, and J. S. Cha, (2017) A study of Location based Air
+                          Logistics Systems with Light-ID and RFID on Drone System for Air Cargo Warehouse Case,
+                          International Journal of Internet, Broadcasting and Communication, 9 (4), pp. 35-36.
+                        </p>
+                        <p>
+                          [7] Wawrla. L, Maghazei. O., and Netland. T. (2019) Whitepaper: Applications of drones in
+                          warehouse operations, ETH Zurich, D-MTEC, Chair of Production and Operations Management
+                        </p>
+                        <p>
+                          [8] Commercial UAV News (2024) Corvus One Drones Solve the Problem of Accurate Inventory
+                          Management
+                        </p>
+                        <p>
+                          [9] Verity (2025) With Verity&rsquo;s drones, Haleon strengthens supply chain performance to
+                          95% OTIF and 99.8% accuracy
+                          <a
+                            class="link"
+                            href="https://www.verity.net/resources/verity-dsv-haleon"
+                            title="새창열림"
+                            target="_blank"
+                            >(https://www.verity.net/resources/verity-dsv-haleon)</a
+                          >
+                        </p>
+                        <p>
+                          [10] CJ 대한통운, 국내최초 &lsquo;물류센터 전용 드론&rsquo;개발 추진 (한국청년물류포럼,
+                          2016.12.7)
+                        </p>
+                        <p>
+                          [11] 국토교통부 보도자료, (2017.04.06), &ldquo;4차 산업혁명 시대, 국토교통 미래를 찾다&rdquo;
+                          국토교통부, p. 1~4
+                        </p>
+                        <p>[12] 매일경제, 물류센터에 드론 띄운다, (2024.11.14)</p>
+                        <p>[13] 한국일보, 드론, AI, 로봇까지..인천항 스마트 항만으로 변신, (2022.6.29)</p>
+                        <p>[14] 연합뉴스, 드론으로 항만 물류창고 재고 조사, (2022.12.08)</p>
+                        <p class="flex">
+                          <span>-</span> B. Baytur, E. &Ouml;zceylan., (2025). Unmanned Aerial Vehicles in Inventory
+                          Management: An Overview of Current Research and Applications, Science, Engineering Management
+                          and Information Technology SEMIT 2024. pp 361-374.
+                        </p>
+                        <p class="flex">
+                          <span>-</span> N. J. Baik. (2016) Textbook: Air Transport Logistics Services Industry, Dunam
+                          (두남), ISBN 978-89-6414-684-2
+                        </p>
+                        <p class="flex"><span>-</span> 이투데이, 드론 전쟁 준비하는 삼성-LG 전자, (2017.4.13)</p>
+                      </div>
+                      <!-- footer -->
+                      <div class="author-img">
+                        <div class="author-02">
+                          <picture
+                            ><source
+                              srcset="/static/assets-new/blog-content-images/097ab300-f49a-4f5d-b2e1-0d45eb0fb52d.jpg"
+                              media="(max-width: 767px)"
+                            />
+                            <img
+                              src="/static/assets-new/blog-content-images/9bd8b49e-0ca5-4929-83f4-29bc5484b396.jpg"
+                              alt="바이블"
+                              class="author-profile"
+                            />
+                          </picture>
+                          <div class="author-info">
+                            <div class="author-name">
+                              <strong>백남진</strong>
+                              <p>교수</p>
+                            </div>
+                            <div class="author-txt">
+                              <p>
+                                현 덕성여자대학교 교수<br />
+                                주요 연구 실적:<br />
+                              </p>
+                              <ul>
+                                <li>- 드론을 활용한 항공물류시스템 구축을 위한 실증연구.</li>
+                                <li>
+                                  - 드론배송에서 운송서비스요인이 <br class="mo-show" />만족도에 미치는 영향력 분석.
+                                </li>
+                                <li>
+                                  - A study of Location based Air Logistics Systems<br class="only-mo" />
+                                  with Light-ID and<br class="only-pc" />
+                                  RFID on Drone System <br class="only-mo" />for Air Cargo Warehouse Case.
+                                </li>
+                                <li>
+                                  저서 : 항공물류운송업무론 <br class="mo-show" />
+                                  (Air Transport Logistics <br class="mo-show" />Service Industry)
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <img
+                            src="/static/assets-new/blog-content-images/6d3f2335-747e-470e-b04a-e659e7d89061.png"
+                            alt="Cello Square"
+                            class="author-logo"
+                          />
+                          <picture
+                            ><source
+                              srcset="/static/assets-new/blog-content-images/6f227977-48dd-40e7-9d7b-a29d51a5a6f5.png"
+                              media="(max-width: 767px)"
+                            />
+                            <img
+                              src="/static/assets-new/blog-content-images/2aba681a-cae9-485a-af25-393fca582471.png"
+                              alt="Cello Square"
+                              class="author-object"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                      <p class="text">
+                        ▶ 해당 콘텐츠는 저작권법에 의하여 보호받는 저작물로 기고자에게 저작권이 있습니다.<br />
+                        ▶ 해당 콘텐츠는 사전 동의 없이 2차 가공 및 영리적인 이용을 금하고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- // detail-box -->
+              <div class="btn-box line align-center">
+                <a href="/kr/blog/blog-list.do" class="btn btn-sm btn-white-border arr-left" role="button"
+                  ><span>목록으로</span></a
+                >
+              </div>
+              <!-- //btn-box-->
+            </div>
+            <!--//inner-->
+          </div>
+          <!--//detail-con-->
+          <div class="related-list">
+            <div class="inner">
+              <p class="relative-title">블로그 최신 콘텐츠</p>
+              <div class="content-list">
+                <div class="content-box">
+                  <a href="/kr/blog/view-1847.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_01.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1847.html">장창훈의 알쏭달쏭 한 특수물류 실무⑦</a>
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-28
+                      <a class="btn-text arr-right" href="/kr/blog/view-1847.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <div class="content-box">
+                  <a href="/kr/blog/view-1846.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_02.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1846.html">첫 해외구매, 수입신고 금액은 이렇게 계산하세요!</a>
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-28
+                      <a class="btn-text arr-right" href="/kr/blog/view-1846.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <div class="content-box">
+                  <a href="/kr/blog/view-1842.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_03.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1842.html">물류패권 1. 왜 지금, 물류 패권인가?</a>
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-22
+                      <a class="btn-text arr-right" href="/kr/blog/view-1842.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <div class="content-box">
+                  <a href="/kr/blog/view-1841.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_04.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1841.html"
+                      >구매 원가 상승의 빌런,<br />환율 변동에 슬기롭게 대응하는 방법</a
+                    >
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-22
+                      <a class="btn-text arr-right" href="/kr/blog/view-1841.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <div class="content-box">
+                  <a href="/kr/blog/view-1840.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_05.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1840.html"
+                      >드론 기반 물류창고 관리 동향 및<br />국내외 운영 사례 분석</a
+                    >
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-19
+                      <a class="btn-text arr-right" href="/kr/blog/view-1840.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <div class="content-box">
+                  <a href="/kr/blog/view-1839.html">
+                    <div class="img">
+                      <img src="/static/assets-new/blog-thumbnails/list-thumbnail_06.jpg" alt="썸네일" />
+                    </div>
+                    <!-- //img -->
+                  </a>
+                  <div class="info">
+                    <div class="category"><b>블로그</b><i>전문가 컬럼</i></div>
+                    <a class="title" href="/kr/blog/view-1839.html">2026년 물류 정책, 이렇게 달라진다</a>
+                    <div class="tag"></div>
+                    <div class="date">
+                      2026-01-15
+                      <a class="btn-text arr-right" href="/kr/blog/view-1839.html"><span>더 알아보기</span></a>
+                    </div>
+                  </div>
+                  <!--//info-->
+                </div>
+
+                <!--//content-box : 마켓업데이트-->
+              </div>
+              <!--//content-list-->
+            </div>
+            <!-- //inner -->
+          </div>
+          <!-- //related-list -->
+        </section>
+
+        <!-- banner-join  Include -->
+
+        <div class="banner-join">
+          <div class="inner">
+            <strong
+              >첼로스퀘어와 함께,<br class="mo-show" />
+              디지털 물류 하세요.</strong
+            >
+            <p>회원가입 한번으로 다양한 서비스를 이용하세요.</p>
+            <a
+              class="btn btn-sm btn-white"
+              href="http://app.cellosquare.com/business-registration-number?lang=ko&refsite=kr-ko&_gl=1%2a1rsbvlt%2a_ga%2aNjg3NTI5MjExLjE2NzAzOTYwMzA.%2a_ga_04GV541ZSY%2aMTY3Njg4MjEwMi4yOS4wLjE2NzY4ODIxMDIuMC4wLjA.%2a_ga_H6SDCFMJRB%2aMTY3Njg4MjEwMi40Mi4wLjE2NzY4ODIxMDIuNjAuMC4w%2a_ga_C7GX5SWPE7%2aMTY3Njg4MjEwMi4yOC4wLjE2NzY4ODIxMDIuNjAuMC4w"
+              target="_blank"
+              title="새창 열림"
+              onclick="tracking.sign()"
+              >무료 회원 가입하기</a
+            >
+          </div>
+        </div>
+
+        <!-- //banner-join  Include -->
+      </main>
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          const aTarget = $(".sampleBanner > a");
+          aTarget.attr("href", "/fileDown.do?contentsSeqNo=-1&contentsCcd=marketUpdate&ordb=-1&langCd=kr");
+          aTarget.attr("target", "_blank");
+
+          // 백서 보기 팝업 열기
+          $(document).on("click", ".js-open-whitepaper-form", function (e) {
+            e.preventDefault();
+            $("#popup_whitepaper_form").getInstance().open();
+          });
+          // 백서 보기 버튼 클릭 시 팝업 닫기 (PDF는 target="_blank"로 새 탭에서 열림)
+          $(document).on("click", "#popup_whitepaper_form #btnSend", function () {
+            $("#popup_whitepaper_form").getInstance().close();
+          });
+        });
+      </script>
+
+      <!-- Footer  Include -->
+      <footer>
+        <footer>
+          <div class="inner">
+            <div class="footer-logo pc-show"><span class="hidden">SAMSUNG SDS Cello Square</span></div>
+            <div class="footer-menu pc-show">
+              <div class="footer-memu-list">
+                <a href="/kr/transportation.do">국제운송</a>
+                <a href="/kr/warehousing-distribution.do">창고 및 내륙운송</a>
+                <a href="/kr/techlogistics.do">IT 기술</a>
+              </div>
+              <div class="footer-memu-list">
+                <a href="/kr/resource.do">리소스</a>
+                <ul class="sub-menu-list">
+                  <li><a href="/kr/news/news-list.do">스퀘어 News</a></li>
+                  <li><a href="/kr/marketupdates/marketupdates-list.do">마켓 업데이트</a></li>
+                  <li><a href="/kr/blog/blog-list.do">블로그</a></li>
+                  <li><a href="/kr/report/report-list.do">백서</a></li>
+                  <li><a href="/kr/glossary/glossary-list.do">물류용어사전</a></li>
+                  <li><a href="/kr/webinar/webinar-list.do">웨비나</a></li>
+                  <li><a href="/kr/video/video-list.do">동영상</a></li>
+                </ul>
+              </div>
+              <div class="footer-memu-list">
+                <a href="/kr/contact.do">고객지원</a>
+                <ul class="sub-menu-list">
+                  <li><a href="/kr/contact.do">문의하기</a></li>
+                  <li><a href="/kr/faq/faq-list.do">FAQ</a></li>
+                  <li><a href="/kr/guide/guide-list.do">가이드</a></li>
+                </ul>
+              </div>
+              <div class="footer-memu-list">
+                <a href="/kr/cello-square/samsung-sds-logistics.do">회사소개</a>
+                <ul class="sub-menu-list">
+                  <li><a href="/kr/cello-square/samsung-sds-logistics.do">삼성SDS</a></li>
+                  <li><a href="/kr/cello-square/introduce.do">첼로스퀘어</a></li>
+                  <li><a href="/kr/company/global-network.do">Global Network</a></li>
+                  <li><a href="/kr/cello-square/brand-introduce.do">브랜드 스토리</a></li>
+                  <li><a href="/kr/cello-square/partnerships.do">파트너십</a></li>
+                  <li><a href="/kr/press/press-list.do">언론보도</a></li>
+                  <li><a href="/kr/event/event-list.do">이벤트</a></li>
+                  <li><a href="/kr/promotion/promotion-list.do">프로모션</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--//footer_menu -->
+            <div class="footer-newletter">
+              <p>삼성SDS 물류 뉴스레터를 만나보세요</p>
+              <!-- 240405  수정 -->
+              <div class="newletter-btn">
+                <div class="d-flex items-center">
+                  <input type="text" id="newletter-emaill" class="" placeholder="이메일을 적어주세요." />
+                  <a href="javascript:goNewsletter()" class="btn btn-sm arr-right"><span>뉴스레터 구독하기</span></a>
+                </div>
+              </div>
+              <!-- //240405  수정 -->
+            </div>
+            <!--//footer_newletter -->
+            <ul class="sns-list d-flex">
+              <li class="naver">
+                <a href="https://blog.naver.com/cello-square" target="_blank" title="새창 열림" role="button"
+                  ><span class="hidden">Naver Blog</span></a
+                >
+              </li>
+              <li class="linked-in">
+                <a
+                  href="https://www.linkedin.com/company/cellosquare-global"
+                  target="_blank"
+                  title="새창 열림"
+                  role="button"
+                  ><span class="hidden">LinkedIn</span></a
+                >
+              </li>
+              <li class="youtube">
+                <a
+                  href="https://www.youtube.com/playlist?list=PL5CBKg4LPW2e0rZrVIH7rCu9towinfDIl"
+                  target="_blank"
+                  title="새창 열림"
+                  role="button"
+                  ><span class="hidden">Youtube</span></a
+                >
+              </li>
+              <li class="facebook">
+                <a href="https://www.facebook.com/cellosquare" target="_blank" title="새창 열림" role="button"
+                  ><span class="hidden">Facebook</span></a
+                >
+              </li>
+            </ul>
+            <!--//sns_list-->
+          </div>
+          <!--//inner-->
+          <div class="footer-add">
+            <div class="inner d-flex items-start">
+              <div class="add-info">
+                <p>
+                  삼성SDS(주) 서울시 송파구 올림픽로35길 125 삼성SDS (05510) <i></i> 대표자 : 이준희, 사업자등록번호 :
+                  110-81-28774<br />
+                  Copyright 2024 SAMSUNG SDS. All rights reserved.
+                </p>
+              </div>
+              <!--//add_info-->
+              <div class="policy-list">
+                <a href="/kr/policy/terms-of-use.do" title="이용약관">이용약관</a>
+                <a href="/kr/policy/site-privacy_policy.do" title="개인정보처리방침">개인정보처리방침</a>
+                <a href="#popup_email" title="이메일무단수집거부">이메일무단수집거부</a>
+              </div>
+              <!--//policy_list-->
+              <div class="family-site">
+                <button type="button">패밀리 사이트</button>
+                <ul>
+                  <li><a href="https://www.samsungsds.com/" target="_blank" title="새창 열림">삼성SDS</a></li>
+                </ul>
+              </div>
+              <!--//family_site-->
+            </div>
+            <!--//inner-->
+          </div>
+          <!--//footer_add-->
+          <div class="footer-js">
+            <div id="popup_email" class="popup-wrap">
+              <div class="popup email-address">
+                <div class="popup-head">
+                  <strong class="popup-title">이메일주소 무단수집거부</strong>
+                </div>
+                <div class="popup-con">
+                  <p>
+                    본 웹사이트에 게시된 이메일주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용하여 무단
+                    수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사 처벌됨을 유념하시기 바랍니다.
+                  </p>
+                  <div class="btn-box align-center">
+                    <a href="#" class="btn btn-sm btn-white-border btn-popup-close">확인</a>
+                  </div>
+                </div>
+                <button type="button" class="btn-popup-close"><span class="hidden">레이어 팝업 닫기</span></button>
+              </div>
+            </div>
+
+            <div id="popup_quote" class="popup-wrap">
+              <div class="popup form-quote popup-center">
+                <div class="popup-con">
+                  <strong></strong>
+                  <p>
+                    제공 가능한 즉시견적 정보가 없습니다.<br />입력하신 정보로 담당자에게 견적문의를 하시겠습니까?
+                    (견적요청 후, 48시간 내에 결과조회 가능)
+                  </p>
+                  <div class="btn-box align-center">
+                    <a href="#" class="btn btn-sm btn-white-border btn-popup-close">취소</a>
+                    <a onclick="jumpContact('kr', 'Quote')" class="btn btn-sm btn-blue btn-popup-close">확인</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 백서 신청 폼 레이어 팝업 -->
+          <div id="popup_whitepaper_form" class="popup-wrap">
+            <div class="popup popup-form" style="max-width: 640px">
+              <div class="popup-head">
+                <strong class="popup-title">백서 다운로드</strong>
+              </div>
+              <div class="popup-con">
+                <div class="inner">
+                  <div class="form-box">
+                    <p class="form-text align-right">* 체크된 항목은 필수입력항목입니다.</p>
+                    <div class="form-row">
+                      <div class="form-con">
+                        <label for="popup-last-name" class="hidden"
+                          >이름<span class="essential"><span class="hidden">필수</span></span></label
+                        >
+                        <input
+                          type="text"
+                          id="popup-last-name"
+                          name="lastName"
+                          maxlength="120"
+                          data-byte="120"
+                          data-vmsg="이름을 120Byte 내로"
+                          class=""
+                          placeholder="이름*"
+                        />
+                      </div>
+                      <div class="form-con">
+                        <label for="popup-e-mail" class="hidden"
+                          >이메일<span class="essential"><span class="hidden">필수</span></span></label
+                        >
+                        <input
+                          type="text"
+                          id="popup-e-mail"
+                          name="emailAddress"
+                          placeholder="이메일*"
+                          maxlength="200"
+                          data-byte="200"
+                          data-vmsg="이메일 형식에 맞게"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-con">
+                        <label for="popup-call-number" class="hidden"
+                          >연락처<span class="essential"><span class="hidden">필수</span></span></label
+                        >
+                        <input
+                          type="number"
+                          id="popup-call-number"
+                          name="mobilePhone"
+                          placeholder="연락처*"
+                          maxlength="120"
+                          data-byte="120"
+                          data-vmsg="연락처를 120Byte 내로"
+                          onkeypress="return inNumber();"
+                        />
+                      </div>
+                      <div class="form-con">
+                        <label for="popup-company-name" class="hidden"
+                          >회사명<span class="essential"><span class="hidden">필수</span></span></label
+                        >
+                        <input
+                          type="text"
+                          id="popup-company-name"
+                          name="companyName"
+                          class=""
+                          placeholder="회사명*"
+                          maxlength="120"
+                          data-byte="120"
+                          data-vmsg="회사명을 120Byte 내로"
+                        />
+                      </div>
+                    </div>
+                    <strong class="form-title"
+                      >아래 링크를 눌러 내용을 주의깊게 읽으세요. 체크박스를 선택하면, 다음 항목을 모두 읽고 동의한
+                      것으로 간주합니다.</strong
+                    >
+                    <div class="terms-con">
+                      <span class="check-box">
+                        <input type="checkbox" name="checkbox1" id="popup-all-agree" />
+                        <label for="popup-all-agree">모두 동의하기</label>
+                      </span>
+                      <div class="form-con-info">
+                        <p class="warning-text" id="popup-terms-warning-text" style="display: none">
+                          필수항목에 모두 동의하지 않으시면 본 서비스를 이용하실 수 없습니다.
+                        </p>
+                      </div>
+                      <div class="terms-list">
+                        <ul>
+                          <li>
+                            <span class="check-box">
+                              <input type="checkbox" name="agree5" id="popup-agree5" />
+                              <label for="popup-agree5"
+                                ><a href="javascript:goTermsOpen('5');" class="btn-terms" role="button">이용약관</a>에
+                                동의합니다.(필수)</label
+                              >
+                            </span>
+                          </li>
+                          <li>
+                            <span class="check-box">
+                              <input type="checkbox" name="agree1" id="popup-agree1" />
+                              <label for="popup-agree1"
+                                ><a href="javascript:goTermsOpen('1');" class="btn-terms" role="button"
+                                  >개인정보 수집 및 이용</a
+                                >에 동의합니다.(필수)</label
+                              >
+                            </span>
+                          </li>
+                          <li>
+                            <span class="check-box">
+                              <input type="checkbox" name="agree6" id="popup-agree6" />
+                              <label for="popup-agree6" class="agree-tit2"
+                                >만 14세 이상임을 확인하고 동의합니다.(필수)</label
+                              >
+                            </span>
+                          </li>
+                          <li>
+                            <span class="check-box">
+                              <input type="checkbox" name="agree4" id="popup-agree4" />
+                              <label for="popup-agree4"
+                                ><a href="javascript:goTermsOpen('4');" class="btn-terms" role="button">마케팅 활용</a
+                                >에 동의합니다.(선택)</label
+                              >
+                            </span>
+                          </li>
+                          <li>
+                            <div class="maketing-btn-wrap">
+                              <span class="check-box">
+                                <input type="checkbox" name="agree7" id="popup-agree7" />
+                                <label for="popup-agree7" class="agree-tit2"
+                                  >마케팅 정보 수신에 동의합니다.(선택)</label
+                                >
+                              </span>
+                              <div class="check-box-marketing-info-itmes">
+                                <span>
+                                  <input type="checkbox" name="agreeEmail" id="popup-agreeEmail" />
+                                  <label for="popup-agreeEmail" class="agree-tit2">이메일</label>
+                                </span>
+                                <span>
+                                  <input type="checkbox" name="agreeKakao" id="popup-agreeKakao" />
+                                  <label for="popup-agreeKakao" class="agree-tit2">카카오톡</label>
+                                </span>
+                                <span>
+                                  <input type="checkbox" name="agreeSms" id="popup-agreeSms" />
+                                  <label for="popup-agreeSms" class="agree-tit2">SMS</label>
+                                </span>
+                              </div>
+                              <div class="terms-list agree-form-box">
+                                <p class="info-text">
+                                  ※ 뉴스레터 수신, 이벤트 경품 발송 등을 위해서는 (선택) 항목의 동의가 필요합니다.
+                                </p>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <p class="info-text">※ 본 사이트는 이용자 편의를 위해 쿠키정보를 활용하고 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="btn-box align-center">
+                    <a
+                      href="/static/assets-new/blog-content-assets/WPKR46_(i4L_White_Paper)_글로벌 컨테이너 선사의 친환경 이행성과 분석-ESG 보고서를 기반으로_KR.pdf"
+                      id="btnSend"
+                      class="btn btn-sm btn-blue"
+                      download=""
+                      >백서 다운로드</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn-popup-close"><span class="hidden">레이어 팝업 닫기</span></button>
+            </div>
+          </div>
+          <!-- // 백서 신청 폼 레이어 팝업 -->
+
+          <!-- 250402 이벤트 팝업 -->
+          <div class="pop-notice popup-wrap" id="popup_sample">
+            <style>
+              .pop-notice .popup {
+                max-width: 1000px;
+                min-width: 1000px;
+                padding: 0 0 46px;
+              }
+              .pop-notice .popup .popup-con {
+                display: flex;
+              }
+              .pop-notice button.btn-popup-close {
+                bottom: 0;
+                top: inherit;
+                right: 5px;
+                z-index: 1;
+              }
+              @media screen and (max-width: 767px) {
+                .pop-notice .popup {
+                  max-width: 90vw;
+                  min-width: 90vw;
+                  overflow: inherit;
+                  padding-bottom: 0;
+                  max-height: calc(90vh - 92px);
+                }
+                .pop-notice .popup .popup-con {
+                  flex-direction: column;
+                  overflow-y: scroll;
+                  height: 100%;
+                }
+                .pop-notice .popup .popup-con a img {
+                  width: 100%;
+                  height: auto;
+                }
+                .pop-notice button.btn-popup-close {
+                  bottom: -46px;
+                }
+                .pop-notice .btn-wrap {
+                  bottom: -46px;
+                }
+              }
+            </style>
+            <!-- Annotate a single popup -->
+            <!-- <div class="popup">
+    <div class="popup-con">
+      <a href="https://www.cello-square.com/kr/promotion/view-190.do">
+        <img src="/static/assets-new/250402_pc_popup_01_1.jpg" alt="특송" class="pc-img">
+        <img src="/static/assets-new/250402_mo_popup_01_1.jpg" alt="특송" class="mo-img">
+      </a>
+      <a href="https://app.cellosquare.com" target="_blank">
+        <img src="/static/assets-new/250402_pc_popup_02_1.jpg" alt="해상" class="pc-img">
+        <img src="/static/assets-new/250402_mo_popup_02_1.jpg" alt="해상" class="mo-img">
+      </a>
+    </div> -->
+            <!-- //-->
+            <!-- <button type="button" class="btn-popup-close" onclick="popupClose()"><span class="hidden">레이어 팝업 닫기</span></button>
+    <div class="btn-wrap">
+      <span class="check-box"><input type="checkbox" id="no-watch" name="no-watch-pop"><label for="no-watch">하루 동안 보지 않기</label></span>
+    </div>
+  </div> -->
+          </div>
+          <!-- //250402 이벤트 팝업 -->
+          <div class="pop-notice popup-wrap" id="popup_two_areas">
+            <style>
+              .popup_div {
+                display: flex;
+                gap: 20px;
+              }
+              .popup_div .popup-info {
+                flex: 1;
+                position: relative;
+                padding-bottom: 47px;
+                height: fit-content;
+              }
+              .popup_div .popup-info .popup-a-link-img1 {
+                position: absolute;
+                left: 29%;
+                bottom: calc(5.8% + 47px);
+                display: block;
+                width: 42%;
+                aspect-ratio: 218 / 48;
+              }
+              .popup_div .popup-info .popup-a-link-img2 {
+                position: absolute;
+                left: 20%;
+                bottom: calc(5% + 47px);
+                display: block;
+                width: 61%;
+                aspect-ratio: 360 / 80;
+              }
+              @media screen and (max-width: 767px) {
+                .popup_div {
+                  display: block;
+                  max-width: 90vw;
+                  min-width: 90vw;
+                  overflow: hidden auto;
+                  padding-bottom: 0;
+                  max-height: calc(90vh - 92px);
+                }
+                .popup_div .popup-info {
+                  padding-bottom: 44px;
+                }
+                .popup_div .popup-info img {
+                  width: 100%;
+                  height: auto;
+                }
+                .popup_div button.btn-popup-close,
+                .popup_div .btn-wrap {
+                  bottom: 0;
+                }
+                .popup-info:last-of-type {
+                  /* 两张图片展示需要打开,仅删除注释，不要改变代码 */
+                  display: none !important;
+                }
+
+                .popup-info.show-last-one {
+                  display: block !important;
+                }
+                .popup_div .popup-info .popup-a-link-img1 {
+                  bottom: calc(5.8% + 44px);
+                }
+                .popup_div .popup-info .popup-a-link-img2 {
+                  bottom: calc(5% + 44px);
+                }
+              }
+            </style>
+
+            <div class="popup_div">
+              <div class="popup-info">
+                <a class="popup-a-link-img1" href="https://www.cello-square.com/kr/promotion/view-205.do"></a>
+                <img src="/static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="pc-img" />
+                <img src="/static/assets-new/260130_LCL_Feb_Promotion_Popup.jpg" alt="LCL" class="mo-img" />
+                <button type="button" class="btn-popup-close" onclick="twoAreasPopupClose(0,event)">
+                  <span class="hidden">레이어 팝업 닫기</span>
+                </button>
+                <div class="btn-wrap">
+                  <span class="check-box"
+                    ><input type="checkbox" id="no-watch-left" name="no-watch-pop-left" /><label for="no-watch-left"
+                      >하루 동안 보지 않기</label
+                    ></span
+                  >
+                </div>
+              </div>
+
+              <div class="popup-info">
+                <a class="popup-a-link-img2" href="https://www.cello-square.com/kr/promotion/view-204.do"></a>
+                <img src="/static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="pc-img" />
+                <img src="/static/assets-new/260114_K-beauty-Express_popup_운임수정.jpg" alt="특송" class="mo-img" />
+                <button type="button" class="btn-popup-close" onclick="twoAreasPopupClose(1,event)">
+                  <span class="hidden">레이어 팝업 닫기</span>
+                </button>
+                <div class="btn-wrap">
+                  <span class="check-box"
+                    ><input type="checkbox" id="no-watch-right" name="no-watch-pop-right" /><label for="no-watch-right"
+                      >하루 동안 보지 않기</label
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+      <!-- //Footer  Include -->
+    </div>
+
+    <div class="footer-js">
+      <script>
+        $(".selectWrap").click(function (e) {
+          // e.preventDefault();
+          let windowWidth = $(window).width();
+          let selectedElement = $(this).find("select");
+          let buttonElement = $(this).find("button");
+          let selectedOption = $(this).find("select option");
+          let selectedOption2 = $(this).find("select option:selected");
+          let selectedVal = selectedElement.val();
+          let selectedIndex = selectedOption.index(selectedOption2);
+
+          // alert(selectedVal, selectedIndex);
+
+          buttonElement.removeClass("selectedClass");
+          selectedElement.removeClass("selectedClass");
+
+          // select box 첫번째 옵션 선택만 아닐 경우
+          if (selectedIndex > 0) {
+            // PC, 모바일에 따라 select박스가 다르게 적용됨
+            if (windowWidth > 767) {
+              buttonElement.addClass("selectedClass");
+            } else {
+              selectedElement.addClass("selectedClass");
+            }
+          }
+        });
+
+        // 실제 모바일 Device에서는 select 클릭으로 작동함
+        if (/Android|iPhone/i.test(navigator.userAgent)) {
+          $(".selectWrap select").change(function (e) {
+            let selectedElement = $(this);
+            let selectedOption = $(this).find("option");
+            let selectedOption2 = $(this).find("option:selected");
+            let selectedVal = selectedElement.val();
+            let selectedIndex = selectedOption.index(selectedOption2);
+
+            selectedElement.removeClass("selectedClass");
+
+            // select box 첫번째 옵션 선택만 아닐 경우
+            if (selectedIndex > 0) {
+              selectedElement.addClass("selectedClass");
+            }
+          });
+        }
+      </script>
+      <!-- //퍼블 : 팝업창 확인하기 위해 기존 script 가져옴 -->
+
+      <link rel="stylesheet" href="/static/css-new/swiper-bundle.min.css" />
+      <script src="/static/js-new/libs/swiper-bundle.min.js"></script>
+      <script src="/static/js-new/libs/jquery-ui.min.js"></script>
+      <script src="/static/js-new/libs/selectbox.js"></script>
+      <script src="/static/js-new/libs/gsap.min.js"></script>
+      <script src="/static/js-new/libs/ScrollTrigger.min.js"></script>
+
+      <script src="/static/js-new/searchEstimate.js"></script>
+      <script src="/static/js-new/tracking.js"></script>
+      <script src="/static/js-new/ui.js"></script>
+      <script>
+        if (window.cqui && typeof cqui.init === "function") {
+          cqui.init();
+        }
+      </script>
+      <script type="text/javascript">
+        var type;
+        function goTerms(v, tf) {
+          if (type === "promotion-quote") {
+            const data = "#promotion-view-terms #agree" + v + "_quote";
+            $(data).prop("checked", tf);
+            fnAgreeChk(type);
+            $("#include-common-terms-promotion-view #popup_term0" + v)
+              .getInstance()
+              .close();
+          } else if (type === "express-contact") {
+            $("#agree" + v).prop("checked", tf);
+            fnAgreeChkMultiple();
+            $("#popup_term0" + v)
+              .getInstance()
+              .close();
+            if (v == "4" && type == "kr-ko") agree4Click();
+          } else {
+            $("#agree" + v).prop("checked", tf);
+            fnAgreeChk();
+            $("#popup_term0" + v)
+              .getInstance()
+              .close();
+            if (v == "4" && type == "kr-ko") agree4Click(); // Korean environment special treatment
+          }
+        }
+
+        function goTermsOpen(v, t) {
+          type = t;
+          if (t === "promotion-quote") {
+            $("#include-common-terms-promotion-view #popup_term0" + v)
+              .getInstance()
+              .open();
+            $("#include-common-terms-promotion-view .term-box").scrollTop(0);
+          } else {
+            $("#popup_term0" + v)
+              .getInstance()
+              .open();
+            $(".term-box").scrollTop(0);
+          }
+        }
+      </script>
+
+      <script>
+        const COOKIE_QUOTE_EVENT_POPUP = "COOKIE_QUOTE_EVENT_POPUP";
+        if (!$.cookie(COOKIE_QUOTE_EVENT_POPUP) && window.location.pathname === "/kr/index.do") {
+          console.log(window.location.pathname);
+          // $('#popup_sample').getInstance().open();
+        }
+
+        function quoteEventCheckBoxClick() {
+          let cookieExpiresDate = new Date();
+          cookieExpiresDate.setUTCHours(23, 59, 59, 999);
+          $.cookie(COOKIE_QUOTE_EVENT_POPUP, "Y", {expires: cookieExpiresDate, path: "/kr"});
+          // $('#popup_sample').getInstance().close();
+        }
+
+        function popupClose() {
+          if ($('input[name="no-watch-pop"]').is(":checked")) {
+            quoteEventCheckBoxClick();
+          }
+          $("#popup_sample").getInstance().close();
+        }
+
+        // 2025-05-22 pop-up window with two img areas start
+        const COOKIE_EVENT_POPUP_LEFT_IMG = "COOKIE_EVENT_POPUP_LEFT_IMG";
+        const COOKIE_EVENT_POPUP_RIGHT_IMG = "COOKIE_EVENT_POPUP_RIGHT_IMG";
+        let popupIsClosed = false;
+        let leftImgClosed = false;
+        let mobileCloseCount = 0;
+        if (
+          (!$.cookie(COOKIE_EVENT_POPUP_LEFT_IMG) || !$.cookie(COOKIE_EVENT_POPUP_RIGHT_IMG)) &&
+          window.location.pathname === "/kr/index.do"
+        ) {
+          const width = window.innerWidth;
+          const $popups = $("#popup_two_areas .popup-info");
+          $popups[0].style.display = "block";
+          $popups[1].style.display = "block";
+          if ($.cookie(COOKIE_EVENT_POPUP_LEFT_IMG)) {
+            $popups[0].style.display = "none";
+            mobileCloseCount++;
+            if (width < 768) {
+              $popups[1].classList.add("show-last-one");
+            }
+          } else if ($.cookie(COOKIE_EVENT_POPUP_RIGHT_IMG)) {
+            $popups[1].style.display = "none";
+            mobileCloseCount++;
+          }
+          $("#popup_two_areas").getInstance().open();
+          $("#popup_two_areas .btn-popup-close").blur();
+          $("#popup_two_areas .popup-a-link-img1").blur();
+        }
+
+        function twoAreasPopupClose(index, event) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+          const mapObject = {
+            0: "no-watch-pop-left",
+            1: "no-watch-pop-right",
+          };
+          if (index === 0) {
+            leftImgClosed = true;
+          }
+          const $popups = $("#popup_two_areas .popup-info");
+          let allHidden = true;
+          const width = window.innerWidth;
+          if (width < 768) {
+            if (mobileCloseCount === 0) {
+              mobileCloseCount++;
+              const inputData = `input[name=${mapObject[index]}]`;
+              if ($(inputData).is(":checked")) {
+                setCookieByPopupCheckboxData(index);
+              }
+              $popups[0].style.display = "none";
+              $popups[1].classList.add("show-last-one");
+              return;
+            } else {
+              mobileCloseCount = 0;
+            }
+          }
+
+          if (index >= 0 && index < $popups.length) {
+            if (width < 768 && $popups[index].classList.contains("show-last-one")) {
+              $popups[index].classList.remove("show-last-one");
+            } else {
+              $popups[index].style.display = "none";
+            }
+            const inputData = `input[name=${mapObject[index]}]`;
+            if ($(inputData).is(":checked")) {
+              setCookieByPopupCheckboxData(index);
+            }
+            if (width > 767) {
+              mobileCloseCount = "pcClose";
+            }
+          }
+          $popups.each(function () {
+            if ($(this).is(":visible")) {
+              allHidden = false;
+              return false;
+            }
+          });
+          if (allHidden) {
+            $("#popup_two_areas").getInstance().close();
+            popupIsClosed = true;
+          }
+        }
+
+        // 2025-09-01 展示一个展示
+        // .popup-info:last-of-type 需要注释
+        // if (!$.cookie(COOKIE_EVENT_POPUP_LEFT_IMG) && window.location.pathname === "/kr/index.do") {
+        //     const $popups = $("#popup_two_areas .popup-info");
+        //     $popups[0].style.display = "block";
+        //     $('#popup_two_areas').getInstance().open();
+        //     $("#popup_two_areas .btn-popup-close").blur();
+        //     $("#popup_two_areas .popup-a-link-img1").blur();
+        // }
+
+        // function twoAreasPopupClose(index, event) {
+        //     event.stopImmediatePropagation();
+        //     event.preventDefault();
+        //     const inputData = `input[name="no-watch-pop-left"]`;
+        //     if ($(inputData).is(":checked")) {
+        //         setCookieByPopupCheckboxData(index);
+        //     }
+        //     $("#popup_two_areas").getInstance().close();
+        // }
+        // 2025-09-01 end
+
+        function setCookieByPopupCheckboxData(index) {
+          let cookieExpiresDate = new Date();
+          cookieExpiresDate.setUTCHours(23, 59, 59, 999);
+          if (index === 0) {
+            $.cookie(COOKIE_EVENT_POPUP_LEFT_IMG, "Y", {expires: cookieExpiresDate, path: "/kr"});
+          } else if (index === 1) {
+            $.cookie(COOKIE_EVENT_POPUP_RIGHT_IMG, "Y", {expires: cookieExpiresDate, path: "/kr"});
+          }
+        }
+
+        const mediaWatch = window.matchMedia("(max-width: 767px)");
+        function handleMediaQueryChange(e) {
+          const $popups = $("#popup_two_areas .popup-info");
+          if (e.matches && ($.cookie(COOKIE_EVENT_POPUP_LEFT_IMG) || leftImgClosed) && !popupIsClosed) {
+            $popups[1].classList.add("show-last-one");
+          }
+        }
+        mediaWatch.addEventListener("change", handleMediaQueryChange);
+
+        window.addEventListener("beforeunload", function () {
+          mediaWatch.removeEventListener("change", handleMediaQueryChange);
+        });
+        // 2025-05-22 pop-up window with two img areas end
+      </script>
+    </div>
+  </body>
+</html>
