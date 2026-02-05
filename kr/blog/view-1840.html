@@ -1679,6 +1679,21 @@
           $(document).on("click", "#popup_whitepaper_form #btnSend", function () {
             $("#popup_whitepaper_form").getInstance().close();
           });
+
+          // 팝업 내 "모두 동의하기" 클릭 시 하위 동의 체크박스 일괄 체크/해제 (ID가 popup-all-agree라 dev-common.js #all-agree와 별도 처리)
+          $(document).on("change", "#popup_whitepaper_form #popup-all-agree", function () {
+            var isChecked = $(this).prop("checked");
+            $("#popup_whitepaper_form .terms-con input[type=checkbox]")
+              .not("#popup-all-agree")
+              .prop("checked", isChecked);
+          });
+          // 팝업 내 개별 동의 체크 시 "모두 동의하기" 상태 동기화
+          $(document).on("change", "#popup_whitepaper_form .terms-con input[type=checkbox]", function () {
+            if ($(this).prop("id") === "popup-all-agree") return;
+            var $all = $("#popup_whitepaper_form .terms-con input[type=checkbox]").not("#popup-all-agree");
+            var allChecked = $all.length > 0 && $all.length === $all.filter(":checked").length;
+            $("#popup-all-agree").prop("checked", allChecked);
+          });
         });
       </script>
 
